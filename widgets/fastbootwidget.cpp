@@ -21,6 +21,9 @@
 #include "fastbootwidget.h"
 #include "ui_fastbootwidget.h"
 
+#include <QFileDialog>
+#include <QMessageBox>
+
 FastbootWidget::FastbootWidget(QWidget *parent,Phone *phone) :
     QWidget(parent),
     ui(new Ui::FastbootWidget)

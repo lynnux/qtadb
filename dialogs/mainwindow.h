@@ -30,7 +30,8 @@
 #include <stdio.h>
 #include <iostream>
 
-#include <QtGui>
+#include <QMainWindow>
+#include <QSystemTrayIcon>
 
 #include "dialogkopiuj.h"
 #include "../threads/screenshotthread.h"

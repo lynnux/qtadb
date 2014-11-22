@@ -65,6 +65,8 @@ public:
     void addThread(const MessageThread &thread);
     bool clear();
 
+    QHash<int, QByteArray> roleNames();
+
 private:
     QList<MessageThread> threads;
 };

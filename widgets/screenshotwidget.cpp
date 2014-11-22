@@ -21,6 +21,9 @@
 #include "screenshotwidget.h"
 #include "ui_screenshotwidget.h"
 
+#include <QMouseEvent>
+#include <QFileDialog>
+
 ScreenshotWidget::ScreenshotWidget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ScreenshotWidget)

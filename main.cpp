@@ -18,45 +18,78 @@
 ************************************************************************/
 
 
-#include <QtGui/QApplication>
+#include <QApplication>
 #include "./classes/application.h"
 #include "./dialogs/mainwindow.h"
 ////////////////////////////////////////
 #include <QtDebug>
 #include <QFile>
 #include <QTextStream>
+#include <QFileDialog>
 
-void myMessageHandler(QtMsgType type, const char *msg)
+void customMessageHandler(QtMsgType type, const QMessageLogContext &context, const QString &msg)
 {
-    QStringList args = qApp->arguments();
+   Q_UNUSED(context);
 
+//   QString dt = QDateTime::currentDateTime().toString("dd/MM/yyyy hh:mm:ss");
+//   QString txt = QString("[%1] ").arg(dt);
     QString txt;
-    switch (type) {
-    case QtDebugMsg:
-        txt = QString("Debug: %1").arg(msg);
-        break;
-    case QtWarningMsg:
-        txt = QString("Warning: %1").arg(msg);
-        break;
-    case QtCriticalMsg:
-        txt = QString("Critical: %1").arg(msg);
-        break;
-    case QtFatalMsg:
-        txt = QString("Fatal: %1").arg(msg);
-        abort();
-    }
-    if (args.contains("--debug"))
-    {
-        QFile outFile("debug.log");
-        outFile.open(QIODevice::WriteOnly | QIODevice::Append);
-        QTextStream ts(&outFile);
 
-        txt.remove(QChar( 0xa ),Qt::CaseInsensitive);
-        txt.remove(QChar( 0xd ),Qt::CaseInsensitive);
+   switch (type)
+   {
+      case QtDebugMsg:
+         txt += QString("{Debug} \t\t %1").arg(msg);
+         break;
+      case QtWarningMsg:
+         txt += QString("{Warning} \t %1").arg(msg);
+         break;
+      case QtCriticalMsg:
+         txt += QString("{Critical} \t %1").arg(msg);
+         break;
+      case QtFatalMsg:
+         txt += QString("{Fatal} \t\t %1").arg(msg);
+         abort();
+         break;
+   }
 
-        ts << txt << endl;
-    }
+   QFile outFile("debug.log");
+   outFile.open(QIODevice::WriteOnly | QIODevice::Append);
+
+   QTextStream textStream(&outFile);
+   textStream << txt << endl;
 }
+
+//void myMessageHandler(QtMsgType type, const char *msg)
+//{
+//    QStringList args = qApp->arguments();
+
+//    QString txt;
+//    switch (type) {
+//    case QtDebugMsg:
+//        txt = QString("Debug: %1").arg(msg);
+//        break;
+//    case QtWarningMsg:
+//        txt = QString("Warning: %1").arg(msg);
+//        break;
+//    case QtCriticalMsg:
+//        txt = QString("Critical: %1").arg(msg);
+//        break;
+//    case QtFatalMsg:
+//        txt = QString("Fatal: %1").arg(msg);
+//        abort();
+//    }
+//    if (args.contains("--debug"))
+//    {
+//        QFile outFile("debug.log");
+//        outFile.open(QIODevice::WriteOnly | QIODevice::Append);
+//        QTextStream ts(&outFile);
+
+//        txt.remove(QChar( 0xa ),Qt::CaseInsensitive);
+//        txt.remove(QChar( 0xd ),Qt::CaseInsensitive);
+
+//        ts << txt << endl;
+//    }
+//}
 
 int main(int argc, char *argv[])
 {
@@ -65,7 +98,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationVersion("0.8.1");
     QCoreApplication::setOrganizationDomain("http://qtadb.com");
     Application a(argc, argv);
-    qInstallMsgHandler(myMessageHandler);
+    qInstallMessageHandler(customMessageHandler);
     a.loadTranslations(":/lang");
     a.loadTranslations(qApp->applicationDirPath());
     a.setQuitOnLastWindowClosed(true);

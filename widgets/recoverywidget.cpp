@@ -21,6 +21,8 @@
 #include "recoverywidget.h"
 #include "ui_recoverywidget.h"
 
+#include <QFileDialog>
+
 RecoveryWidget::RecoveryWidget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::RecoveryWidget)

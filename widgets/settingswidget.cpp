@@ -21,6 +21,10 @@
 #include "settingswidget.h"
 #include "ui_settingswidget.h"
 
+#include <QFontDialog>
+#include <QColorDialog>
+#include <QFileDialog>
+
 SettingsWidget::SettingsWidget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::SettingsWidget)
@@ -426,8 +430,8 @@ void SettingsWidget::getSettings()
     this->animationDuration = settings->value("animationDuration", 1000).toInt();
     this->animationDirection = settings->value("animationDirection", 0).toInt();
 
-    this->shellBackgroundColor = settings->value("shellBackgroundColor", Qt::white).value<QColor>();
-    this->shellFontColor = settings->value("shellFontColor", Qt::black).value<QColor>();
+    this->shellBackgroundColor = settings->value("shellBackgroundColor", "#ffffff").value<QColor>();
+    this->shellFontColor = settings->value("shellFontColor", "#000000").value<QColor>();
 
     this->windowGeometry = settings->value("windowGeometry").toByteArray();
 

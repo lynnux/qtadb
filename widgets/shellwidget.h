@@ -21,7 +21,8 @@
 #ifndef SHELLWIDGET_H
 #define SHELLWIDGET_H
 
-#include <QtGui>
+#include <QTextEdit>
+#include <QProcess>
 
 class ShellWidget : public QTextEdit
 {

@@ -21,7 +21,8 @@
 #ifndef ANIMATION_H
 #define ANIMATION_H
 
-#include <QtGui>
+#include <QWidget>
+#include <QPropertyAnimation>
 
 #define UP_TO_DOWN 0
 #define DOWN_TO_UP 1

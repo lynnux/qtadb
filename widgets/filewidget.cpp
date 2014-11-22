@@ -21,6 +21,10 @@
 #include "filewidget.h"
 #include "ui_filewidget.h"
 
+#include <QStandardPaths>
+#include <QMenu>
+#include <QScrollBar>
+
 quint32 qbytearrayToInt32(QByteArray array)
 {
     QDataStream stream(array);
@@ -212,15 +216,17 @@ FileWidget::FileWidget(QWidget *parent, SettingsWidget *settings) :
     //ustawienie comboboxa
     QPair<QIcon, QString> para;
     QFileIconProvider *provider = new QFileIconProvider;
-    para.second = QDesktopServices::storageLocation(QDesktopServices::DesktopLocation);
+    para.second = QStandardPaths::standardLocations(QStandardPaths::DesktopLocation).first();//QDesktopServices::storageLocation(QDesktopServices::DesktopLocation);
     para.first = provider->icon(QFileInfo(para.second));
     this->ui->leftComboBox->addItem(para.first, para.second);
 
-    para.second = QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation);
+    para.second = QStandardPaths::standardLocations(QStandardPaths::DocumentsLocation).first();
+//    para.second = QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation);
     para.first = provider->icon(QFileInfo(para.second));
     this->ui->leftComboBox->addItem(para.first, para.second);
 
-    para.second = QDesktopServices::storageLocation(QDesktopServices::HomeLocation);
+    QStandardPaths::standardLocations(QStandardPaths::HomeLocation).first();
+//    para.second = QDesktopServices::storageLocation(QDesktopServices::HomeLocation);
     para.first = provider->icon(QFileInfo(para.second));
     this->ui->leftComboBox->addItem(para.first, para.second);
 
@@ -364,7 +370,7 @@ void FileWidget::changeEvent(QEvent *e)
                 QList<QAction *> actions = this->computerMenu->actions();
                 foreach(QAction *action, actions)
                 {
-                    action->setText(tr(action->data().toString().toAscii()));
+                    action->setText(tr(action->data().toString().toLatin1()));
                 }
             }
             if (this->phoneLeftMenu != NULL)
@@ -372,7 +378,7 @@ void FileWidget::changeEvent(QEvent *e)
                 QList<QAction *> actions = this->phoneLeftMenu->actions();
                 foreach(QAction *action, actions)
                 {
-                    action->setText(tr(action->data().toString().toAscii()));
+                    action->setText(tr(action->data().toString().toLatin1()));
                 }
             }
             if (this->phoneRightMenu != NULL)
@@ -380,7 +386,7 @@ void FileWidget::changeEvent(QEvent *e)
                 QList<QAction *> actions = this->phoneRightMenu->actions();
                 foreach(QAction *action, actions)
                 {
-                    action->setText(tr(action->data().toString().toAscii()));
+                    action->setText(tr(action->data().toString().toLatin1()));
                 }
             }
         }
@@ -1994,7 +2000,7 @@ App * FileWidget::getAppInfo(QString filePath)
             }
             else if (aaptLineParts.first().contains(QRegExp("label="))&&app->appName.isEmpty())
             {
-                app->appName=QString::fromUtf8(aaptLineParts.first().toAscii());
+                app->appName=QString::fromUtf8(aaptLineParts.first().toLatin1());
                 app->appName.remove(0,app->appName.indexOf("label=")+6);
                 app->appName.remove("'");
             }
@@ -2012,7 +2018,7 @@ App * FileWidget::getAppInfo(QString filePath)
     if (!settings.contains(app->packageName))
     {
         settings.setValue(app->packageName+"/icoName", app->icoName);
-        settings.setValue(app->packageName+"/appName", QString::fromUtf8(app->appName.toAscii()));
+        settings.setValue(app->packageName+"/appName", QString::fromUtf8(app->appName.toLatin1()));
         settings.setValue(app->packageName+"/version", app->appVersion);
     }
 

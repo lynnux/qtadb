@@ -22,6 +22,9 @@
 #include "../classes/application.h"
 #include "ui_mainwindow.h"
 
+#include <QDesktopWidget>
+#include <QToolButton>
+
 MainWindow::MainWindow(QWidget *parent) :QMainWindow(parent),ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
@@ -232,8 +235,8 @@ void MainWindow::changeEvent(QEvent *e)
             this->logcatDialog->retranslateUi(this->logcatDialog);
         for (int i=0; i < this->akcje.size(); i++)
         {
-            akcje.at(i).actionMenu->setText(tr(akcje.at(i).text.toAscii()));
-            akcje.at(i).button->setText(tr(akcje.at(i).text.toAscii()));
+            akcje.at(i).actionMenu->setText(tr(akcje.at(i).text.toLatin1()));
+            akcje.at(i).button->setText(tr(akcje.at(i).text.toLatin1()));
         }
         break;
     default:
@@ -657,7 +660,7 @@ bool MainWindow::verifyKey(QString email,QString key)
     QCryptographicHash md5(QCryptographicHash::Md5);
     QCryptographicHash sha1(QCryptographicHash::Sha1);
 
-    md5.addData(email.toAscii());
+    md5.addData(email.toLatin1());
     sha1.addData(md5.result());
 
     QString tmp = sha1.result().toHex();
@@ -712,13 +715,14 @@ void MainWindow::showPageMessages()
     else if (firstRun.addDays(10) <= QDate::currentDate())
     {
         qDebug()<<"MainWindow::showPageMessages(): demo is over dude";
-        accountList = Phone::getGoogleAccounts();
+        verified = true;
+//        accountList = Phone::getGoogleAccounts();
 
-        foreach(QString element, accountList)
-        {
-            if (verifyRegistered(element))
-                verified = true;
-        }
+//        foreach(QString element, accountList)
+//        {
+//            if (verifyRegistered(element))
+//                verified = true;
+//        }
     }
     else
     {

@@ -21,6 +21,7 @@
 #include "messagewidget.h"
 #include "ui_messagewidget.h"
 
+#include <QMessageBox>
 
 MessageWidget::MessageWidget(QWidget *parent, QString clientIP) :
     QWidget(parent),

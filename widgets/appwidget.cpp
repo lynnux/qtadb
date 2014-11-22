@@ -21,6 +21,9 @@
 #include "appwidget.h"
 #include "ui_appwidget.h"
 
+#include <QMenu>
+#include <QFileDialog>
+
 AppWidget::AppWidget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::AppWidget)
@@ -132,17 +135,17 @@ void AppWidget::changeEvent(QEvent *e)
         if (this->appMenu != NULL)
         {
             foreach(QAction *action, this->appMenu->actions())
-                action->setText(tr(action->data().toString().toAscii()));
+                action->setText(tr(action->data().toString().toLatin1()));
         }
         if (this->backupMenu != NULL)
         {
             foreach(QAction *action, this->backupMenu->actions())
-                action->setText(tr(action->data().toString().toAscii()));
+                action->setText(tr(action->data().toString().toLatin1()));
         }
         foreach(QAction *action, this->ui->toolButtonBackup->menu()->actions())
-            action->setText(tr(action->data().toString().toAscii()));
+            action->setText(tr(action->data().toString().toLatin1()));
         foreach(QAction *action, this->ui->toolButtonRestore->menu()->actions())
-            action->setText(tr(action->data().toString().toAscii()));
+            action->setText(tr(action->data().toString().toLatin1()));
 
         break;
     default:
@@ -618,7 +621,7 @@ void AppWidget::missingAapt()
 
     msgBox->exec();
 
-    if (msgBox->clickedButton() == download)
+    if (msgBox->clickedButton() == (QAbstractButton*)download)
     {
         QDesktopServices::openUrl(QUrl("http://qtadb.wordpress.com/download/"));
         QDesktopServices::openUrl(QUrl("file:///"+this->sdk));
@@ -1030,7 +1033,7 @@ void ThreadBackups::run()
             {
                 tmp.remove("app.name=");
                 tmp.remove(QRegExp("\\s+$"));
-                backupFound.appName = QString::fromUtf8(tmp.toAscii());
+                backupFound.appName = QString::fromUtf8(tmp.toLatin1());
             }
             else if (tmp.contains("app.size"))
             {
@@ -1313,7 +1316,7 @@ void ThreadApps::run()
                 {
                     if (aaptLineParts.first().contains(QRegExp("name=")) && app.packageName.isEmpty())
                     {
-                        app.packageName=QString::fromUtf8(aaptLineParts.first().toAscii());
+                        app.packageName=QString::fromUtf8(aaptLineParts.first().toLatin1());
                         app.packageName.remove(0,app.packageName.indexOf("name=")+5);
                         app.packageName.remove("'");
                     }
@@ -1325,7 +1328,7 @@ void ThreadApps::run()
                     }
                     else if (aaptLineParts.first().contains(QRegExp("label="))&&app.appName.isEmpty())
                     {
-                        app.appName=QString::fromUtf8(aaptLineParts.first().toAscii());
+                        app.appName=QString::fromUtf8(aaptLineParts.first().toLatin1());
                         app.appName.remove(0,app.appName.indexOf("label=")+6);
                         app.appName.remove("'");
                     }
@@ -1341,7 +1344,7 @@ void ThreadApps::run()
             }
             qDebug()<<"Apps aapt decoded";
             settings.setValue("apps/"+app.packageName+"/icoName", app.icoName);
-            settings.setValue("apps/"+app.packageName+"/appName", QString::fromUtf8(app.appName.toAscii()));
+            settings.setValue("apps/"+app.packageName+"/appName", QString::fromUtf8(app.appName.toLatin1()));
             settings.setValue("apps/"+app.packageName+"/version", app.appVersion);
             settings.setValue("apps/"+app.packageName+"/size", app.appSize);
             settings.setValue("apps/"+app.packageName+"/date", app.date);
@@ -1506,7 +1509,7 @@ App * AppWidget::getAppInfo(QString filePath)
             }
             else if (aaptLineParts.first().contains(QRegExp("label="))&&app->appName.isEmpty())
             {
-                app->appName=QString::fromUtf8(aaptLineParts.first().toAscii());
+                app->appName=QString::fromUtf8(aaptLineParts.first().toLatin1());
                 app->appName.remove(0,app->appName.indexOf("label=")+6);
                 app->appName.remove("'");
             }
@@ -1524,7 +1527,7 @@ App * AppWidget::getAppInfo(QString filePath)
     if (!settings.contains(app->packageName))
     {
         settings.setValue(app->packageName+"/icoName", app->icoName);
-        settings.setValue(app->packageName+"/appName", QString::fromUtf8(app->appName.toAscii()));
+        settings.setValue(app->packageName+"/appName", QString::fromUtf8(app->appName.toLatin1()));
         settings.setValue(app->packageName+"/version", app->appVersion);
     }
 

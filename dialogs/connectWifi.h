@@ -30,7 +30,7 @@ class ConnectWifi : public QDialog, public Ui::ConnectWifi
 {
 Q_OBJECT
 public:
-        ConnectWifi( QWidget * parent = 0, Qt::WFlags f = 0 );
+        ConnectWifi( QWidget * parent = 0);
 };
 #endif
 

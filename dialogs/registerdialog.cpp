@@ -77,7 +77,7 @@ bool RegisterDialog::verifyKey(QString key)
         QCryptographicHash md5(QCryptographicHash::Md5);
         QCryptographicHash sha1(QCryptographicHash::Sha1);
 
-        md5.addData("QtADB"+element.toAscii()+"qtadb");
+        md5.addData("QtADB"+element.toLatin1()+"qtadb");
         sha1.addData(md5.result());
 
         if (key == sha1.result().toHex())

@@ -21,6 +21,10 @@
 #include "logcatdialog.h"
 #include "ui_logcatdialog.h"
 
+#include <QMenu>
+#include <QScrollBar>
+#include <QFileDialog>
+
 LogcatDialog::LogcatDialog(QWidget *parent) :
     QDialog(parent)
 {

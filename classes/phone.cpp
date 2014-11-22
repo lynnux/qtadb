@@ -21,7 +21,9 @@
 #include "phone.h"
 #include <QSettings>
 #include <QTextCodec>
-
+#include <QFileIconProvider>
+#include <QApplication>
+#include <QStyle>
 
 void ConnectionThread::run()
 {
@@ -324,7 +326,7 @@ QList<File> *Phone::getFileList()
                 tmpFile.fileColor = QColor(Qt::black);
             name.remove(QRegExp("\\[\\d;\\d+m"));
 
-            tmpFile.fileName = QString::fromUtf8(name.toAscii());
+            tmpFile.fileName = QString::fromUtf8(name.toLatin1());
             tmpFile.filePath = this->getPath() + tmpFile.fileName;
 
             qDebug()<<"Phone::getFileList() - plik: "<<name<< " - " <<lineParts.first();
@@ -514,7 +516,7 @@ QList<File> *Phone::getFileList(QString filter)
                 tmpFile.fileColor = QColor(Qt::black);
             name.remove(QRegExp("\\[\\d;\\d+m"));
 
-            tmpFile.fileName = QString::fromUtf8(name.toAscii());
+            tmpFile.fileName = QString::fromUtf8(name.toLatin1());
             tmpFile.filePath = this->getPath() + tmpFile.fileName;
 
             qDebug()<<"Phone::getFileList() - plik: "<<name<< " - " <<lineParts.first();
@@ -573,9 +575,9 @@ FileList *Phone::getStaticFileList(QString path, QString sdk, bool hiddenFiles)
     qDebug()<<QDateTime::currentDateTime().toString("hh:mm:ss");
     qDebug()<<"Phone::getFileList() - "<<path;
     if (hiddenFiles)
-        command="\""+sdk+"\""+"adb shell \"busybox ls -l -a \'"+codec->toUnicode(path.toAscii())+"\'\"";
+        command="\""+sdk+"\""+"adb shell \"busybox ls -l -a \'"+codec->toUnicode(path.toLatin1())+"\'\"";
     else
-        command="\""+sdk+"\""+"adb shell \"busybox ls -l \'"+codec->toUnicode(path.toAscii())+"\'\"";
+        command="\""+sdk+"\""+"adb shell \"busybox ls -l \'"+codec->toUnicode(path.toLatin1())+"\'\"";
 
     qDebug()<<"Phone::getFileList() - "<<command;
     phone->start(command);

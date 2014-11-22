@@ -21,7 +21,7 @@
 #ifndef SCREENSHOTWIDGET_H
 #define SCREENSHOTWIDGET_H
 
-#include <QtGui>
+#include <QWidget>
 #include "../threads/screenshotthread.h"
 
 namespace Ui {

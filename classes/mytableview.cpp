@@ -20,6 +20,8 @@
 
 #include "mytableview.h"
 
+#include <QHeaderView>
+
 MyTableView::MyTableView(QWidget *parent) :
     QTableView(parent)
 {

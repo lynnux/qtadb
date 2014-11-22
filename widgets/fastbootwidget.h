@@ -21,7 +21,7 @@
 #ifndef FASTBOOTWIDGET_H
 #define FASTBOOTWIDGET_H
 
-#include <QtGui>
+#include <QWidget>
 #include "../classes/phone.h"
 
 namespace Ui {

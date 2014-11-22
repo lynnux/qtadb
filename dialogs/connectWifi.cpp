@@ -20,8 +20,8 @@
 
 #include "connectWifi.h"
 
-ConnectWifi::ConnectWifi( QWidget * parent, Qt::WFlags f)
-        : QDialog(parent, f)
+ConnectWifi::ConnectWifi( QWidget * parent)
+        : QDialog(parent)
 {
         setupUi(this);
         this->setLayout(this->gridLayout);
