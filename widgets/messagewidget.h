@@ -23,9 +23,9 @@
 
 #include <QtGui>
 #include <QtNetwork>
-#include <QDeclarativeView>
-#include <QDeclarativeContext>
-
+#include <QQuickView>
+#include <QQmlContext>
+#include <QWidget>
 #include "../classes/models/messagethreadmodel.h"
 #include "../classes/models/contactmodel.h"
 
@@ -49,8 +49,8 @@ protected:
 
 private:
     Ui::MessageWidget *ui;
-    QDeclarativeView *qmlView;
-    QDeclarativeContext *qmlViewCtx;
+    QQuickView *qmlView;
+    QQmlContext *qmlViewCtx;
 
     MessageModel messageModel;
     MessageThreadModel messageThreadModel;

@@ -114,7 +114,7 @@ MessageThread MessageThreadModel::getThread(QString threadId)
     }
     return MessageThread();
 }
-
+/*
 QString MessageThreadModel::getThreadID(QString number)
 {
     /*
@@ -124,9 +124,9 @@ QString MessageThreadModel::getThreadID(QString number)
             return thread;
     }
     return MessageThread();
-    */
-}
 
+}
+*/
 void MessageThreadModel::updateThread(QString id, QString timestamp,QString lastBody, QString messageCount, QString read)
 {
     int i;

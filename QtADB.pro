@@ -16,7 +16,8 @@
 #   @author Jakub Motyczko
 # -------------------------------------------------
 QT += network
-QT += declarative
+QT += quick
+QT += widgets
 TARGET = QtADB
 
 TEMPLATE = app
@@ -123,8 +124,10 @@ OTHER_FILES += \
     qml/messages/ContactList.qml \
     qml/messages/delegates/ThreadContextMenu.qml
 
-win32 {
+win32-g++ {
 LIBS += libole32
 }
-
+win32-msvc* {
+LIBS += ole32.lib
+}
 #tutaj i w ecwin7.h

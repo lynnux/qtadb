@@ -57,7 +57,7 @@ public:
     void updateMessageCount(QString id);
     void markAsRead(QString id);
     MessageThread getThread(QString threadId);
-    QString getThreadID(QString number);
+    //QString getThreadID(QString number);
     enum MessageThreadRoles { ThreadIdRole,MessageCountRole,TimeStampRole,NumberRole,LastBodyRole, ReadRole, ContactNameRole};
     void updateThread(QString id, QString timestamp,QString lastBody, QString messageCount, QString read);
     int rowCount(const QModelIndex & parent = QModelIndex()) const;
