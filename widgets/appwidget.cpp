@@ -626,8 +626,8 @@ void AppWidget::missingAapt()
         QDesktopServices::openUrl(QUrl("http://qtadb.wordpress.com/download/"));
         QDesktopServices::openUrl(QUrl("file:///"+this->sdk));
     }
-    delete closeMsg;
-    delete download;
+    //delete closeMsg;
+    //delete download;
     delete msgBox;
 }
 

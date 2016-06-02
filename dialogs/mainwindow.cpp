@@ -900,8 +900,8 @@ void MainWindow::updatesCheckFinished(bool gotUpdate, QString oldVersion, QStrin
         {
             QDesktopServices::openUrl ( QUrl("http://qtadb.wordpress.com/download/") );
         }
-        delete getUpdatesMsg;
-        delete closeMsg;
+        //delete getUpdatesMsg;
+        //delete closeMsg;
         delete msgBox;
     }
     else
@@ -1053,9 +1053,9 @@ void MainWindow::donateMessage()
             {
                 settings.setValue("donateMessageShow", false);
             }
-            delete donate;
-            delete remaindLater;
-            delete dontRemaind;
+            //delete donate;
+            //delete remaindLater;
+            //delete dontRemaind;
             delete msgBox;
         }
         else

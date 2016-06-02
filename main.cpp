@@ -203,8 +203,8 @@ int main(int argc, char *argv[])
             {
                 break;
             }
-            delete closeMsg;
-            delete choosePathMsg;
+            //delete closeMsg;
+            //delete choosePathMsg;
             delete msgBox;
         }
         else break;
