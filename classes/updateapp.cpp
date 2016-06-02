@@ -37,38 +37,40 @@ void UpdateApp::gotWWW(QNetworkReply * pReply)
         QString newVersion, oldVersion;
         QByteArray data = pReply->readAll();
         start = data.indexOf("<p>Latest version is:");
-        start+=21;
-        end = data.indexOf("</p>", start);
+        if(start != -1)
+        {
+            start+=21;
+            end = data.indexOf("</p>", start);
 
-        newVersion = data.mid(start, end - start);
-        oldVersion = QCoreApplication::applicationVersion();
-        QStringList newVersionList, oldVersionList;
-        newVersionList = newVersion.split(".");
-        oldVersionList = oldVersion.split(".");
-        if (newVersionList[0].toInt() < oldVersionList[0].toInt())
-        {
-            emit this->updateState(false, oldVersion, newVersion);
+            newVersion = data.mid(start, end - start);
+            oldVersion = QCoreApplication::applicationVersion();
+            QStringList newVersionList, oldVersionList;
+            newVersionList = newVersion.split(".");
+            oldVersionList = oldVersion.split(".");
+            if (newVersionList[0].toInt() < oldVersionList[0].toInt())
+            {
+                emit this->updateState(false, oldVersion, newVersion);
+                return;
+            }
+            if (newVersionList[1].toInt() < oldVersionList[1].toInt())
+            {
+                emit this->updateState(false, oldVersion, newVersion);
+                return;
+            }
+            if (newVersionList[2].toInt() < oldVersionList[2].toInt())
+            {
+                emit this->updateState(false, oldVersion, newVersion);
+                return;
+            }
+            if ((newVersionList[0].toInt() == oldVersionList[0].toInt()) && (newVersionList[1].toInt() == oldVersionList[1].toInt()) && (newVersionList[2].toInt() == oldVersionList[2].toInt()))
+                emit this->updateState(false, oldVersion, newVersion);
+            else
+                emit this->updateState(true, oldVersion, newVersion);
             return;
         }
-        if (newVersionList[1].toInt() < oldVersionList[1].toInt())
-        {
-            emit this->updateState(false, oldVersion, newVersion);
-            return;
-        }
-        if (newVersionList[2].toInt() < oldVersionList[2].toInt())
-        {
-            emit this->updateState(false, oldVersion, newVersion);
-            return;
-        }
-        if ((newVersionList[0].toInt() == oldVersionList[0].toInt()) && (newVersionList[1].toInt() == oldVersionList[1].toInt()) && (newVersionList[2].toInt() == oldVersionList[2].toInt()))
-            emit this->updateState(false, oldVersion, newVersion);
-        else
-            emit this->updateState(true, oldVersion, newVersion);
     }
-    else
-    {
-        emit this->updateState(false, "failed", "failed");
-    }
+
+    emit this->updateState(false, "failed", "failed");
 }
 
 void UpdateApp::checkUpdates()
