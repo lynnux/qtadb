@@ -226,29 +226,39 @@ int main(int argc, char *argv[])
             delete msgBox;
             return 1;
         }
-//        adbd cannot run as root in production builds
-        proces.setProcessChannelMode(QProcess::MergedChannels);
-        proces.start("\"" + sdk + "\"adb root");
-        proces.waitForFinished(-1);
-        tmp = proces.readAll();
-        qDebug()<<"adb root - "<<tmp;
 
-        if (tmp.contains("adbd cannot run as root in production builds") && !settings.value("disableProductionBuildsMessage",false).toBool())
+        // avoid hang on adb root check
+        QMessageBox *msgBoxIsRoot = new QMessageBox(QMessageBox::Question, QObject::tr("choose"),
+                                               QObject::tr("Need root?"),
+                                                    QMessageBox::Yes | QMessageBox::No);
+        msgBoxIsRoot->setDefaultButton(QMessageBox::No);
+        if(QMessageBox::Yes == msgBoxIsRoot->exec())
         {
-            QMessageBox *msgBox2 = new QMessageBox(QMessageBox::Critical, QObject::tr("error"),
-                                                   QObject::tr("adbd cannot run as root in production builds so You can't do anything with /system partition. Run anyway?\n(press save to run QtADB and disable this message)"),
-                                                   QMessageBox::Yes | QMessageBox::No | QMessageBox::Save);
-            int button = msgBox2->exec();
-            if ( button == QMessageBox::No)
+            //        adbd cannot run as root in production builds
+            proces.setProcessChannelMode(QProcess::MergedChannels);
+            proces.start("\"" + sdk + "\"adb root");
+            proces.waitForFinished(-1);
+            tmp = proces.readAll();
+            qDebug()<<"adb root - "<<tmp;
+
+            if (tmp.contains("adbd cannot run as root in production builds") && !settings.value("disableProductionBuildsMessage",false).toBool())
             {
-                delete msgBox2;
-                return 0;
-            }
-            if ( button == QMessageBox::Save)
-            {
-                settings.setValue("disableProductionBuildsMessage",true);
+                QMessageBox *msgBox2 = new QMessageBox(QMessageBox::Critical, QObject::tr("error"),
+                                                       QObject::tr("adbd cannot run as root in production builds so You can't do anything with /system partition. Run anyway?\n(press save to run QtADB and disable this message)"),
+                                                       QMessageBox::Yes | QMessageBox::No | QMessageBox::Save);
+                int button = msgBox2->exec();
+                if ( button == QMessageBox::No)
+                {
+                    delete msgBox2;
+                    return 0;
+                }
+                if ( button == QMessageBox::Save)
+                {
+                    settings.setValue("disableProductionBuildsMessage",true);
+                }
             }
         }
+        delete msgBoxIsRoot;
 
         QStringList args = qApp->arguments();
         if (args.count() > 1)
