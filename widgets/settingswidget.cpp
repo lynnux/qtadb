@@ -186,7 +186,7 @@ void SettingsWidget::setSettingsToDefaults()
     this->showPhoneColumnsHeaders = true;
     this->dialogKopiujShowModal = true;
     this->killDemonOnExit = false;
-    this->checkForUpdatesOnStart = true;
+    this->checkForUpdatesOnStart = false;
     this->color = true;
     this->colorShellFiles = true;
     this->showAppIcon = false;
