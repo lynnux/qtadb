@@ -399,7 +399,7 @@ void SettingsWidget::getSettings()
     this->showPhoneColumnsHeaders = settings->value("showPhoneColumnsHeaders", true).toBool();
     this->dialogKopiujShowModal = settings->value("dialogKopiujShowModal", true).toBool();
     this->killDemonOnExit = settings->value("killDemonOnExit", false).toBool();
-    this->checkForUpdatesOnStart = settings->value("checkForUpdatesOnStart", true).toBool();
+    this->checkForUpdatesOnStart = settings->value("checkForUpdatesOnStart", false).toBool();
     this->color = settings->value("color", true).toBool();
     this->colorShellFiles = settings->value("colorShellFiles", true).toBool();
     this->showAppIcon = settings->value("showAppIcon", false).toBool();
