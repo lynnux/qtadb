@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="pt_BR" sourcelanguage="en">
+<TS version="2.1" language="pt_BR" sourcelanguage="en">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -51,41 +51,59 @@
         <source>Ok</source>
         <translation>Ok</translation>
     </message>
+    <message>
+        <location filename="../dialogs/aboutdialog.ui" line="303"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;QtADB was created with&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/aboutdialog.ui" line="314"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://qt.nokia.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AppTableModel</name>
     <message>
-        <location filename="../classes/models/apptablemodel.cpp" line="163"/>
+        <location filename="../classes/models/apptablemodel.cpp" line="183"/>
         <source>Name</source>
         <comment>application table name</comment>
         <translation>Nome</translation>
     </message>
     <message>
-        <location filename="../classes/models/apptablemodel.cpp" line="165"/>
+        <location filename="../classes/models/apptablemodel.cpp" line="185"/>
         <source>Version</source>
         <comment>application table version</comment>
         <translation>Versão</translation>
     </message>
     <message>
-        <location filename="../classes/models/apptablemodel.cpp" line="167"/>
+        <location filename="../classes/models/apptablemodel.cpp" line="187"/>
         <source>Size</source>
         <comment>applications table size</comment>
         <translation>Tamanho</translation>
     </message>
     <message>
-        <location filename="../classes/models/apptablemodel.cpp" line="169"/>
+        <location filename="../classes/models/apptablemodel.cpp" line="189"/>
         <source>Package</source>
         <comment>application table package</comment>
         <translation>Pacote</translation>
     </message>
     <message>
-        <location filename="../classes/models/apptablemodel.cpp" line="171"/>
+        <location filename="../classes/models/apptablemodel.cpp" line="191"/>
         <source>File</source>
         <comment>application table file</comment>
         <translation>Arquivo</translation>
     </message>
     <message>
-        <location filename="../classes/models/apptablemodel.cpp" line="173"/>
+        <location filename="../classes/models/apptablemodel.cpp" line="193"/>
         <source>Location</source>
         <comment>application table location</comment>
         <translation>Localização</translation>
@@ -157,21 +175,21 @@
     </message>
     <message>
         <location filename="../widgets/appwidget.ui" line="368"/>
-        <location filename="../widgets/appwidget.cpp" line="778"/>
+        <location filename="../widgets/appwidget.cpp" line="801"/>
         <source>uninstall</source>
         <extracomment>uninstall apps</extracomment>
         <translation>Remover</translation>
     </message>
     <message>
         <location filename="../widgets/appwidget.ui" line="400"/>
-        <location filename="../widgets/appwidget.cpp" line="661"/>
+        <location filename="../widgets/appwidget.cpp" line="684"/>
         <source>backup</source>
         <extracomment>backup apps</extracomment>
         <translation>Arquivo de segurança</translation>
     </message>
     <message>
         <location filename="../widgets/appwidget.ui" line="446"/>
-        <location filename="../widgets/appwidget.cpp" line="860"/>
+        <location filename="../widgets/appwidget.cpp" line="883"/>
         <source>restore</source>
         <extracomment>restore backup</extracomment>
         <translation>Restaurar</translation>
@@ -199,141 +217,141 @@
         <translation>Abrir no Google Market (PC)</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="151"/>
+        <location filename="../widgets/appwidget.cpp" line="174"/>
         <source>Choose where You want to save selected apps</source>
         <translation>Escolha onde deseja gravar os aplicativos selecionados</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="595"/>
+        <location filename="../widgets/appwidget.cpp" line="618"/>
         <source>Missing aapt</source>
         <translation>Aplicativo faltando</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="72"/>
+        <location filename="../widgets/appwidget.cpp" line="95"/>
         <source>backup</source>
         <comment>backup menu title</comment>
         <translation>Arquivo de segurança</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="74"/>
+        <location filename="../widgets/appwidget.cpp" line="97"/>
         <source>app</source>
         <comment>backup menu action</comment>
         <translation>Aplicativo</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="75"/>
+        <location filename="../widgets/appwidget.cpp" line="98"/>
         <source>data</source>
         <comment>backup menu action</comment>
         <translation>Dados</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="76"/>
+        <location filename="../widgets/appwidget.cpp" line="99"/>
         <source>app + data</source>
         <comment>backup menu action</comment>
         <translation>Aplicativo e dados</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="84"/>
+        <location filename="../widgets/appwidget.cpp" line="107"/>
         <source>restore</source>
         <comment>restore menu title</comment>
         <translation>Restaurar</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="86"/>
+        <location filename="../widgets/appwidget.cpp" line="109"/>
         <source>app</source>
         <comment>restore menu action</comment>
         <translation>Aplicativo</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="87"/>
+        <location filename="../widgets/appwidget.cpp" line="110"/>
         <source>data</source>
         <comment>restore menu action</comment>
         <translation>Dados</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="88"/>
+        <location filename="../widgets/appwidget.cpp" line="111"/>
         <source>app + data</source>
         <comment>restore menu action</comment>
         <translation>Aplicativo e dados</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="172"/>
+        <location filename="../widgets/appwidget.cpp" line="195"/>
         <source>uninstall</source>
         <comment>right click apps menu</comment>
         <translation>Remover</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="173"/>
+        <location filename="../widgets/appwidget.cpp" line="196"/>
         <source>copy to PC</source>
         <comment>right click apps menu</comment>
         <translation>Copiar para o PC</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="174"/>
+        <location filename="../widgets/appwidget.cpp" line="197"/>
         <source>Get apps info</source>
         <comment>right click apps menu</comment>
         <translation>Obter informações dos aplicativos</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="175"/>
+        <location filename="../widgets/appwidget.cpp" line="198"/>
         <source>Get apps version from internet</source>
         <comment>right click apps menu</comment>
         <translation>Obter versão do aplicativo na internet</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="191"/>
+        <location filename="../widgets/appwidget.cpp" line="214"/>
         <source>remove</source>
         <comment>right click backups menu</comment>
         <translation>Remover</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="216"/>
+        <location filename="../widgets/appwidget.cpp" line="239"/>
         <source>selected</source>
         <comment>selected label below table</comment>
         <translation>selecionado</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="353"/>
-        <location filename="../widgets/appwidget.cpp" line="426"/>
+        <location filename="../widgets/appwidget.cpp" line="376"/>
+        <location filename="../widgets/appwidget.cpp" line="449"/>
         <source>App name</source>
         <comment>combo apps filter</comment>
         <translation>Nome do aplicativo</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="354"/>
-        <location filename="../widgets/appwidget.cpp" line="427"/>
+        <location filename="../widgets/appwidget.cpp" line="377"/>
+        <location filename="../widgets/appwidget.cpp" line="450"/>
         <source>Package name</source>
         <comment>combo apps filter</comment>
         <translation>Nome do pacote</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="355"/>
-        <location filename="../widgets/appwidget.cpp" line="428"/>
+        <location filename="../widgets/appwidget.cpp" line="378"/>
+        <location filename="../widgets/appwidget.cpp" line="451"/>
         <source>File path</source>
         <comment>combo apps filter</comment>
         <translation>Caminho do arquivo</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="356"/>
-        <location filename="../widgets/appwidget.cpp" line="429"/>
+        <location filename="../widgets/appwidget.cpp" line="379"/>
+        <location filename="../widgets/appwidget.cpp" line="452"/>
         <source>Location</source>
         <comment>combo apps filter</comment>
         <translation>Localização</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="392"/>
+        <location filename="../widgets/appwidget.cpp" line="415"/>
         <source>App name</source>
         <comment>combo backups filter</comment>
         <translation>Nome do aplicativo</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="393"/>
+        <location filename="../widgets/appwidget.cpp" line="416"/>
         <source>Package name</source>
         <comment>combo backups filter</comment>
         <translation>Nome do pacote</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="595"/>
+        <location filename="../widgets/appwidget.cpp" line="618"/>
         <source>QtADB did not found aapt.
 Download it and place in one directory with adb.
 After You place it in correct directory click Refresh button</source>
@@ -342,33 +360,33 @@ Baixe o aplicativo e coloque em um diretório com adb.
 Depois de colocar no diretório correto, clique no botão de Atualizar.</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="596"/>
+        <location filename="../widgets/appwidget.cpp" line="619"/>
         <source>Download</source>
         <comment>missing aapt message button</comment>
         <translatorcomment>não traduzido para que seja entendimento pelo usuário - not to be translated into understanding the user</translatorcomment>
         <translation>Download</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="597"/>
+        <location filename="../widgets/appwidget.cpp" line="620"/>
         <source>Cancel</source>
         <comment>missing aapt message button</comment>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="662"/>
-        <location filename="../widgets/appwidget.cpp" line="778"/>
-        <location filename="../widgets/appwidget.cpp" line="810"/>
-        <location filename="../widgets/appwidget.cpp" line="860"/>
+        <location filename="../widgets/appwidget.cpp" line="685"/>
+        <location filename="../widgets/appwidget.cpp" line="801"/>
+        <location filename="../widgets/appwidget.cpp" line="833"/>
+        <location filename="../widgets/appwidget.cpp" line="883"/>
         <source>are you sure???</source>
         <translation>Tem certeza???</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="715"/>
+        <location filename="../widgets/appwidget.cpp" line="738"/>
         <source>select apps to install</source>
         <translation>Selecione os aplicativos que deseja instalar</translation>
     </message>
     <message>
-        <location filename="../widgets/appwidget.cpp" line="810"/>
+        <location filename="../widgets/appwidget.cpp" line="833"/>
         <source>remove backup</source>
         <translatorcomment>tradução não literal para facilitar entendimento - non-literal translation to facilitate understanding</translatorcomment>
         <translation>Remover arquivo de segurança</translation>
@@ -377,50 +395,50 @@ Depois de colocar no diretório correto, clique no botão de Atualizar.</transla
 <context>
     <name>BackupTableModel</name>
     <message>
-        <location filename="../classes/models/backuptablemodel.cpp" line="127"/>
-        <location filename="../classes/models/backuptablemodel.cpp" line="132"/>
+        <location filename="../classes/models/backuptablemodel.cpp" line="147"/>
+        <location filename="../classes/models/backuptablemodel.cpp" line="152"/>
         <source>yes</source>
         <translation>sim</translation>
     </message>
     <message>
-        <location filename="../classes/models/backuptablemodel.cpp" line="129"/>
-        <location filename="../classes/models/backuptablemodel.cpp" line="134"/>
+        <location filename="../classes/models/backuptablemodel.cpp" line="149"/>
+        <location filename="../classes/models/backuptablemodel.cpp" line="154"/>
         <source>no</source>
         <translation>não</translation>
     </message>
     <message>
-        <location filename="../classes/models/backuptablemodel.cpp" line="153"/>
+        <location filename="../classes/models/backuptablemodel.cpp" line="173"/>
         <source>Name</source>
         <comment>backup table header app name</comment>
         <translation>Nome</translation>
     </message>
     <message>
-        <location filename="../classes/models/backuptablemodel.cpp" line="155"/>
+        <location filename="../classes/models/backuptablemodel.cpp" line="175"/>
         <source>Version</source>
         <comment>backup table header app version</comment>
         <translation>Versão</translation>
     </message>
     <message>
-        <location filename="../classes/models/backuptablemodel.cpp" line="157"/>
+        <location filename="../classes/models/backuptablemodel.cpp" line="177"/>
         <source>Size</source>
         <comment>backup table header app size</comment>
         <translation>Tamanho</translation>
     </message>
     <message>
-        <location filename="../classes/models/backuptablemodel.cpp" line="159"/>
+        <location filename="../classes/models/backuptablemodel.cpp" line="179"/>
         <source>Package</source>
         <comment>backup table header app package</comment>
         <translation>Pacote</translation>
     </message>
     <message>
-        <location filename="../classes/models/backuptablemodel.cpp" line="161"/>
+        <location filename="../classes/models/backuptablemodel.cpp" line="181"/>
         <source>App</source>
         <comment>backup table header apk file</comment>
         <translatorcomment>cabeçalho da tabela de backup de arquivos</translatorcomment>
         <translation>Aplicativo</translation>
     </message>
     <message>
-        <location filename="../classes/models/backuptablemodel.cpp" line="163"/>
+        <location filename="../classes/models/backuptablemodel.cpp" line="183"/>
         <source>Data</source>
         <comment>backup table header data</comment>
         <translatorcomment>backup de dados do cabeçalho da tabela</translatorcomment>
@@ -479,55 +497,55 @@ Depois de colocar no diretório correto, clique no botão de Atualizar.</transla
         <translation>Boot IMG</translation>
     </message>
     <message>
-        <location filename="../widgets/fastbootwidget.cpp" line="52"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="75"/>
         <source>Choose img file...</source>
         <translation>Escolher um arquivo img...</translation>
     </message>
     <message>
-        <location filename="../widgets/fastbootwidget.cpp" line="52"/>
-        <location filename="../widgets/fastbootwidget.cpp" line="82"/>
-        <location filename="../widgets/fastbootwidget.cpp" line="117"/>
-        <location filename="../widgets/fastbootwidget.cpp" line="152"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="75"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="105"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="140"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="175"/>
         <source>IMG File </source>
         <translation>Arquivo IMG</translation>
     </message>
     <message>
-        <location filename="../widgets/fastbootwidget.cpp" line="82"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="105"/>
         <source>Choose hboot img file...</source>
         <translation>Escolher um arquivo hboot img ...</translation>
     </message>
     <message>
-        <location filename="../widgets/fastbootwidget.cpp" line="89"/>
-        <location filename="../widgets/fastbootwidget.cpp" line="95"/>
-        <location filename="../widgets/fastbootwidget.cpp" line="124"/>
-        <location filename="../widgets/fastbootwidget.cpp" line="130"/>
-        <location filename="../widgets/fastbootwidget.cpp" line="159"/>
-        <location filename="../widgets/fastbootwidget.cpp" line="165"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="112"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="118"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="147"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="153"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="182"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="188"/>
         <source>Error!</source>
         <translation>Erro!</translation>
     </message>
     <message>
-        <location filename="../widgets/fastbootwidget.cpp" line="91"/>
-        <location filename="../widgets/fastbootwidget.cpp" line="126"/>
-        <location filename="../widgets/fastbootwidget.cpp" line="161"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="114"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="149"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="184"/>
         <source>Success!</source>
         <translation>Sucesso!</translation>
     </message>
     <message>
-        <location filename="../widgets/fastbootwidget.cpp" line="95"/>
-        <location filename="../widgets/fastbootwidget.cpp" line="130"/>
-        <location filename="../widgets/fastbootwidget.cpp" line="165"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="118"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="153"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="188"/>
         <source>Operation cancelled!</source>
         <translation>Operação cancelada!</translation>
     </message>
     <message>
-        <location filename="../widgets/fastbootwidget.cpp" line="117"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="140"/>
         <source>Choose radio img file...</source>
         <translatorcomment>tradução não literal para facilitar entendimento - non-literal translation to facilitate understanding</translatorcomment>
         <translation>Escolher um arquivo radio img...</translation>
     </message>
     <message>
-        <location filename="../widgets/fastbootwidget.cpp" line="152"/>
+        <location filename="../widgets/fastbootwidget.cpp" line="175"/>
         <source>Choose recovery img file...</source>
         <translatorcomment>tradução não literal para facilitar entendimento - non-literal translation to facilitate understanding</translatorcomment>
         <translation>Escolher um arquivo recovery img...</translation>
@@ -536,19 +554,19 @@ Depois de colocar no diretório correto, clique no botão de Atualizar.</transla
 <context>
     <name>FileTableModel</name>
     <message>
-        <location filename="../classes/models/filetablemodel.cpp" line="187"/>
+        <location filename="../classes/models/filetablemodel.cpp" line="207"/>
         <source>Name</source>
         <comment>file table file name</comment>
         <translation>Nome</translation>
     </message>
     <message>
-        <location filename="../classes/models/filetablemodel.cpp" line="189"/>
+        <location filename="../classes/models/filetablemodel.cpp" line="209"/>
         <source>Size</source>
         <comment>file table file size</comment>
         <translation>Tamanho</translation>
     </message>
     <message>
-        <location filename="../classes/models/filetablemodel.cpp" line="191"/>
+        <location filename="../classes/models/filetablemodel.cpp" line="211"/>
         <source>Date</source>
         <comment>file table file date</comment>
         <translation>Data</translation>
@@ -575,277 +593,277 @@ Depois de colocar no diretório correto, clique no botão de Atualizar.</transla
         <translation>celular</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.ui" line="264"/>
+        <location filename="../widgets/filewidget.ui" line="270"/>
         <source>F2 rename</source>
         <extracomment>rename button</extracomment>
         <translation>F2 renomear</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.ui" line="278"/>
+        <location filename="../widgets/filewidget.ui" line="290"/>
         <source>F3 select all/none</source>
         <extracomment>select button</extracomment>
         <translation>F3 selec. todos/nenhum</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.ui" line="292"/>
+        <location filename="../widgets/filewidget.ui" line="310"/>
         <source>F4 install</source>
         <extracomment>install button</extracomment>
         <translation>F4 instalar</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.ui" line="306"/>
+        <location filename="../widgets/filewidget.ui" line="330"/>
         <source>F5 copy</source>
         <extracomment>copy button</extracomment>
         <translation>F5 copiar</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.ui" line="320"/>
+        <location filename="../widgets/filewidget.ui" line="350"/>
         <source>F6 new dir</source>
         <extracomment>new dir button</extracomment>
         <translation>F6 novo diretório</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.ui" line="334"/>
+        <location filename="../widgets/filewidget.ui" line="370"/>
         <source>F7 refresh</source>
         <extracomment>refresh files button</extracomment>
         <translation>F7 atualizar</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.ui" line="348"/>
+        <location filename="../widgets/filewidget.ui" line="390"/>
         <source>F8 delete</source>
         <extracomment>delete button</extracomment>
         <translation>F8 apagar</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.ui" line="362"/>
+        <location filename="../widgets/filewidget.ui" line="410"/>
         <source>F9 hidden files</source>
         <extracomment>hidden button</extracomment>
         <translation>F9 arquivos ocultos</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="1909"/>
+        <location filename="../widgets/filewidget.cpp" line="1942"/>
         <source>install</source>
         <translation>Instalar</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="566"/>
-        <location filename="../widgets/filewidget.cpp" line="608"/>
-        <location filename="../widgets/filewidget.cpp" line="1234"/>
-        <location filename="../widgets/filewidget.cpp" line="1301"/>
+        <location filename="../widgets/filewidget.cpp" line="592"/>
+        <location filename="../widgets/filewidget.cpp" line="638"/>
+        <location filename="../widgets/filewidget.cpp" line="1264"/>
+        <location filename="../widgets/filewidget.cpp" line="1334"/>
         <source>select some files first</source>
         <translation>selecione alguns arquivos primeiro</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="570"/>
-        <location filename="../widgets/filewidget.cpp" line="1238"/>
-        <location filename="../widgets/filewidget.cpp" line="2052"/>
-        <location filename="../widgets/filewidget.cpp" line="2096"/>
-        <location filename="../widgets/filewidget.cpp" line="2146"/>
+        <location filename="../widgets/filewidget.cpp" line="599"/>
+        <location filename="../widgets/filewidget.cpp" line="1270"/>
+        <location filename="../widgets/filewidget.cpp" line="2088"/>
+        <location filename="../widgets/filewidget.cpp" line="2136"/>
+        <location filename="../widgets/filewidget.cpp" line="2190"/>
         <source>copying</source>
         <translation>Copiando</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="570"/>
-        <location filename="../widgets/filewidget.cpp" line="612"/>
-        <location filename="../widgets/filewidget.cpp" line="1238"/>
-        <location filename="../widgets/filewidget.cpp" line="1305"/>
-        <location filename="../widgets/filewidget.cpp" line="1909"/>
-        <location filename="../widgets/filewidget.cpp" line="2052"/>
-        <location filename="../widgets/filewidget.cpp" line="2096"/>
-        <location filename="../widgets/filewidget.cpp" line="2146"/>
+        <location filename="../widgets/filewidget.cpp" line="599"/>
+        <location filename="../widgets/filewidget.cpp" line="642"/>
+        <location filename="../widgets/filewidget.cpp" line="1270"/>
+        <location filename="../widgets/filewidget.cpp" line="1338"/>
+        <location filename="../widgets/filewidget.cpp" line="1942"/>
+        <location filename="../widgets/filewidget.cpp" line="2088"/>
+        <location filename="../widgets/filewidget.cpp" line="2136"/>
+        <location filename="../widgets/filewidget.cpp" line="2190"/>
         <source>are you sure???</source>
         <translation>Tem certeza???</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="584"/>
-        <location filename="../widgets/filewidget.cpp" line="1252"/>
-        <location filename="../widgets/filewidget.cpp" line="2066"/>
-        <location filename="../widgets/filewidget.cpp" line="2114"/>
-        <location filename="../widgets/filewidget.cpp" line="2162"/>
+        <location filename="../widgets/filewidget.cpp" line="614"/>
+        <location filename="../widgets/filewidget.cpp" line="1285"/>
+        <location filename="../widgets/filewidget.cpp" line="2103"/>
+        <location filename="../widgets/filewidget.cpp" line="2155"/>
+        <location filename="../widgets/filewidget.cpp" line="2207"/>
         <source>theres nothing to copy. Maybe selected dirs are empty</source>
         <translation>Nada para ser copiado.
 Talvez os diretórios selecionados estejem vazios</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="612"/>
-        <location filename="../widgets/filewidget.cpp" line="1305"/>
+        <location filename="../widgets/filewidget.cpp" line="642"/>
+        <location filename="../widgets/filewidget.cpp" line="1338"/>
         <source>deleting</source>
         <translation>Apagando</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="630"/>
-        <location filename="../widgets/filewidget.cpp" line="1338"/>
-        <location filename="../widgets/filewidget.cpp" line="1347"/>
+        <location filename="../widgets/filewidget.cpp" line="660"/>
+        <location filename="../widgets/filewidget.cpp" line="1371"/>
+        <location filename="../widgets/filewidget.cpp" line="1380"/>
         <source>getting files...</source>
         <translation>obtendo arquivos...</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="726"/>
-        <location filename="../widgets/filewidget.cpp" line="1471"/>
+        <location filename="../widgets/filewidget.cpp" line="756"/>
+        <location filename="../widgets/filewidget.cpp" line="1504"/>
         <source>error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="727"/>
-        <location filename="../widgets/filewidget.cpp" line="1471"/>
+        <location filename="../widgets/filewidget.cpp" line="757"/>
+        <location filename="../widgets/filewidget.cpp" line="1504"/>
         <source>dir was not created.
 Make sure that you are allowed to do this</source>
         <translation>O diretório não foi criado.
 Certifique-se que você tem permissão para fazer isso</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="1715"/>
+        <location filename="../widgets/filewidget.cpp" line="1748"/>
         <source>selected</source>
         <translation>selecionado</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="1601"/>
+        <location filename="../widgets/filewidget.cpp" line="1634"/>
         <source>searching...</source>
         <translation>procurando...</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="512"/>
+        <location filename="../widgets/filewidget.cpp" line="538"/>
         <source>rename</source>
         <comment>computer right click menu</comment>
         <translation>Renomear</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="514"/>
+        <location filename="../widgets/filewidget.cpp" line="540"/>
         <source>select all</source>
         <comment>computer right click menu</comment>
         <translation>Selecionar todos</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="516"/>
+        <location filename="../widgets/filewidget.cpp" line="542"/>
         <source>select none</source>
         <comment>computer right click menu</comment>
         <translation>Remover seleção</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="518"/>
+        <location filename="../widgets/filewidget.cpp" line="544"/>
         <source>copy</source>
         <comment>computer right click menu</comment>
         <translation>Copiar</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="520"/>
+        <location filename="../widgets/filewidget.cpp" line="546"/>
         <source>new dir</source>
         <comment>computer right click menu</comment>
         <translation>Novo diretório</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="522"/>
+        <location filename="../widgets/filewidget.cpp" line="548"/>
         <source>refresh</source>
         <comment>computer right click menu</comment>
         <translation>Atualizar</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="524"/>
+        <location filename="../widgets/filewidget.cpp" line="550"/>
         <source>delete</source>
         <comment>computer right click menu</comment>
         <translation>Apagar</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="526"/>
+        <location filename="../widgets/filewidget.cpp" line="552"/>
         <source>hidden files</source>
         <comment>computer right click menu</comment>
         <translation>Arquivos ocultos</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="528"/>
+        <location filename="../widgets/filewidget.cpp" line="554"/>
         <source>install</source>
         <comment>computer right click menu</comment>
         <translation>Instalar</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="530"/>
+        <location filename="../widgets/filewidget.cpp" line="556"/>
         <source>Show app info</source>
         <comment>computer right click menu</comment>
         <translation>Mostrar informação sobre o aplicativo</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="532"/>
+        <location filename="../widgets/filewidget.cpp" line="558"/>
         <source>open in new tab</source>
         <comment>computer right click menu</comment>
         <translatorcomment>tradução não literal para facilitar entendimento - non-literal translation to facilitate understanding</translatorcomment>
         <translation>Abrir em uma nova tab</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="941"/>
+        <location filename="../widgets/filewidget.cpp" line="971"/>
         <source>selected</source>
         <comment>selected label below table</comment>
         <translation>Selecionado</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="1122"/>
-        <location filename="../widgets/filewidget.cpp" line="1154"/>
+        <location filename="../widgets/filewidget.cpp" line="1152"/>
+        <location filename="../widgets/filewidget.cpp" line="1184"/>
         <source>rename</source>
         <comment>phone right click menu</comment>
         <translation>Renomear</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="1124"/>
-        <location filename="../widgets/filewidget.cpp" line="1156"/>
+        <location filename="../widgets/filewidget.cpp" line="1154"/>
+        <location filename="../widgets/filewidget.cpp" line="1186"/>
         <source>select all</source>
         <comment>phone right click menu</comment>
         <translation>Selecionar todos</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="1126"/>
-        <location filename="../widgets/filewidget.cpp" line="1158"/>
+        <location filename="../widgets/filewidget.cpp" line="1156"/>
+        <location filename="../widgets/filewidget.cpp" line="1188"/>
         <source>select none</source>
         <comment>phone right click menu</comment>
         <translation>Remover seleção</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="1128"/>
-        <location filename="../widgets/filewidget.cpp" line="1160"/>
+        <location filename="../widgets/filewidget.cpp" line="1158"/>
+        <location filename="../widgets/filewidget.cpp" line="1190"/>
         <source>copy</source>
         <comment>phone right click menu</comment>
         <translation>Copiar</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="1130"/>
-        <location filename="../widgets/filewidget.cpp" line="1162"/>
+        <location filename="../widgets/filewidget.cpp" line="1160"/>
+        <location filename="../widgets/filewidget.cpp" line="1192"/>
         <source>new dir</source>
         <comment>phone right click menu</comment>
         <translation>Novo diretório</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="1132"/>
-        <location filename="../widgets/filewidget.cpp" line="1164"/>
+        <location filename="../widgets/filewidget.cpp" line="1162"/>
+        <location filename="../widgets/filewidget.cpp" line="1194"/>
         <source>refresh</source>
         <comment>phone right click menu</comment>
         <translation>Atualizar</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="1134"/>
-        <location filename="../widgets/filewidget.cpp" line="1166"/>
+        <location filename="../widgets/filewidget.cpp" line="1164"/>
+        <location filename="../widgets/filewidget.cpp" line="1196"/>
         <source>delete</source>
         <comment>phone right click menu</comment>
         <translation>Apagar</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="1136"/>
-        <location filename="../widgets/filewidget.cpp" line="1168"/>
+        <location filename="../widgets/filewidget.cpp" line="1166"/>
+        <location filename="../widgets/filewidget.cpp" line="1198"/>
         <source>hidden files</source>
         <comment>phone right click menu</comment>
         <translation>Arquivos ocultos</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="1170"/>
+        <location filename="../widgets/filewidget.cpp" line="1200"/>
         <source>open in new tab</source>
         <comment>phone right click menu</comment>
         <translatorcomment>tradução não literal para facilitar entendimento - non-literal translation to facilitate understanding</translatorcomment>
         <translation>Abrir em uma nova tab</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="1772"/>
+        <location filename="../widgets/filewidget.cpp" line="1805"/>
         <source>information</source>
         <translation>Informação</translation>
     </message>
     <message>
-        <location filename="../widgets/filewidget.cpp" line="1772"/>
+        <location filename="../widgets/filewidget.cpp" line="1805"/>
         <source>It&apos;s not an application</source>
         <translation>Não é um aplicativo</translation>
     </message>
@@ -914,27 +932,27 @@ Certifique-se que você tem permissão para fazer isso</translation>
         <translation>Limite do Buffer</translation>
     </message>
     <message>
-        <location filename="../dialogs/logcatdialog.cpp" line="20"/>
+        <location filename="../dialogs/logcatdialog.cpp" line="44"/>
         <source>clear logcat</source>
         <translation>Limpar logcat</translation>
     </message>
     <message>
-        <location filename="../dialogs/logcatdialog.cpp" line="21"/>
+        <location filename="../dialogs/logcatdialog.cpp" line="45"/>
         <source>copy selected to clipboard</source>
         <translation>copiar seleção para área de transferência</translation>
     </message>
     <message>
-        <location filename="../dialogs/logcatdialog.cpp" line="22"/>
+        <location filename="../dialogs/logcatdialog.cpp" line="46"/>
         <source>export selected to file</source>
         <translation>exportar seleção para arquivo</translation>
     </message>
     <message>
-        <location filename="../dialogs/logcatdialog.cpp" line="259"/>
+        <location filename="../dialogs/logcatdialog.cpp" line="283"/>
         <source>Save File...</source>
         <translation>Gravar arquivo...</translation>
     </message>
     <message>
-        <location filename="../dialogs/logcatdialog.cpp" line="259"/>
+        <location filename="../dialogs/logcatdialog.cpp" line="283"/>
         <source>txt file</source>
         <translation>arquivo txt</translation>
     </message>
@@ -942,31 +960,31 @@ Certifique-se que você tem permissão para fazer isso</translation>
 <context>
     <name>LogcatModel</name>
     <message>
-        <location filename="../classes/models/logcatmodel.cpp" line="138"/>
+        <location filename="../classes/models/logcatmodel.cpp" line="158"/>
         <source>Time</source>
         <comment>logcat header</comment>
         <translation>Hora</translation>
     </message>
     <message>
-        <location filename="../classes/models/logcatmodel.cpp" line="140"/>
+        <location filename="../classes/models/logcatmodel.cpp" line="160"/>
         <source>Type</source>
         <comment>logcat header</comment>
         <translation>Tipo</translation>
     </message>
     <message>
-        <location filename="../classes/models/logcatmodel.cpp" line="142"/>
+        <location filename="../classes/models/logcatmodel.cpp" line="162"/>
         <source>Sender</source>
         <comment>logcat header</comment>
         <translation>Remetente</translation>
     </message>
     <message>
-        <location filename="../classes/models/logcatmodel.cpp" line="144"/>
+        <location filename="../classes/models/logcatmodel.cpp" line="164"/>
         <source>Pid</source>
         <comment>logcat header</comment>
         <translation>Pid</translation>
     </message>
     <message>
-        <location filename="../classes/models/logcatmodel.cpp" line="146"/>
+        <location filename="../classes/models/logcatmodel.cpp" line="166"/>
         <source>Message</source>
         <comment>logcat header</comment>
         <translation>Mensagem</translation>
@@ -1072,185 +1090,185 @@ Certifique-se que você tem permissão para fazer isso</translation>
         <translation>Cadastrar chave de registro</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="42"/>
+        <location filename="../dialogs/mainwindow.cpp" line="65"/>
         <source>Logcat</source>
         <comment>action in system tray menu</comment>
         <translatorcomment>não traduzido para que seja entendimento pelo usuário - not to be translated into understanding the user</translatorcomment>
         <translation>Logcat</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="44"/>
+        <location filename="../dialogs/mainwindow.cpp" line="67"/>
         <source>exit</source>
         <comment>action in system tray menu</comment>
         <translation>Sair</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="71"/>
+        <location filename="../dialogs/mainwindow.cpp" line="94"/>
         <source>Files</source>
         <comment>files button</comment>
         <translation>Arquivos</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="72"/>
+        <location filename="../dialogs/mainwindow.cpp" line="95"/>
         <source>Apps</source>
         <comment>apps button</comment>
         <translation>Aplicativos</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="73"/>
+        <location filename="../dialogs/mainwindow.cpp" line="96"/>
         <source>Recovery</source>
         <comment>recovery button</comment>
         <translation>Recuperação</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="74"/>
+        <location filename="../dialogs/mainwindow.cpp" line="97"/>
         <source>Fastboot</source>
         <comment>fastbot button</comment>
         <translatorcomment>não traduzido para que seja entendimento pelo usuário - not to be translated into understanding the user</translatorcomment>
         <translation>Fastboot</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="75"/>
+        <location filename="../dialogs/mainwindow.cpp" line="98"/>
         <source>Phone info</source>
         <comment>phone info button</comment>
         <translatorcomment>tradução não literal para facilitar entendimento - non-literal translation to facilitate understanding</translatorcomment>
         <translation>Informações</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="76"/>
+        <location filename="../dialogs/mainwindow.cpp" line="99"/>
         <source>Screenshot</source>
         <comment>screenshot button</comment>
         <translation>Capturar tela</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="77"/>
+        <location filename="../dialogs/mainwindow.cpp" line="100"/>
         <source>Settings</source>
         <comment>settings button</comment>
         <translation>Configurações</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="78"/>
+        <location filename="../dialogs/mainwindow.cpp" line="101"/>
         <source>Shell</source>
         <comment>shell button</comment>
         <translatorcomment>não traduzido para que seja entendimento pelo usuário - not to be translated into understanding the user</translatorcomment>
         <translation>Shell</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="79"/>
+        <location filename="../dialogs/mainwindow.cpp" line="102"/>
         <source>Messages</source>
         <comment>messages button</comment>
         <translation>Mensagens</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="81"/>
+        <location filename="../dialogs/mainwindow.cpp" line="104"/>
         <source>Logcat</source>
         <comment>logcat button</comment>
         <translatorcomment>não traduzido para que seja entendimento pelo usuário - not to be translated into understanding the user</translatorcomment>
         <translation>Logcat</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="677"/>
+        <location filename="../dialogs/mainwindow.cpp" line="702"/>
         <source>Attention!</source>
         <translation>Atenção!</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="678"/>
+        <location filename="../dialogs/mainwindow.cpp" line="703"/>
         <source>To use message manager You have to turn on WiFi.</source>
         <translation>Para usar o gerenciador de mensagem, você deve ligar o WiFi.</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="807"/>
+        <location filename="../dialogs/mainwindow.cpp" line="833"/>
         <source>Sms from </source>
         <comment>system tray bubble</comment>
         <translation>SMS de </translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="812"/>
+        <location filename="../dialogs/mainwindow.cpp" line="838"/>
         <source>Sms result</source>
         <comment>system tray bubble</comment>
         <translation>Resposta do Sms</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="866"/>
+        <location filename="../dialogs/mainwindow.cpp" line="892"/>
         <source>New updates</source>
         <translation>Novas atualizações</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="866"/>
+        <location filename="../dialogs/mainwindow.cpp" line="892"/>
         <source>New update is available
 </source>
         <translation>Nova atualização disponível
 </translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="867"/>
-        <location filename="../dialogs/mainwindow.cpp" line="890"/>
+        <location filename="../dialogs/mainwindow.cpp" line="893"/>
+        <location filename="../dialogs/mainwindow.cpp" line="916"/>
         <source>Your version: </source>
         <translation>Sua versão: </translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="867"/>
-        <location filename="../dialogs/mainwindow.cpp" line="890"/>
+        <location filename="../dialogs/mainwindow.cpp" line="893"/>
+        <location filename="../dialogs/mainwindow.cpp" line="916"/>
         <source>
 Latest version: </source>
         <translation>
 Última versão: </translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="868"/>
+        <location filename="../dialogs/mainwindow.cpp" line="894"/>
         <source>Download</source>
         <translatorcomment>não traduzido para que seja entendimento pelo usuário - not to be translated into understanding the user</translatorcomment>
         <translation>Download</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="869"/>
+        <location filename="../dialogs/mainwindow.cpp" line="895"/>
         <source>Close</source>
         <translation>Fechar</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="885"/>
+        <location filename="../dialogs/mainwindow.cpp" line="911"/>
         <source>error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="885"/>
+        <location filename="../dialogs/mainwindow.cpp" line="911"/>
         <source>There was problem while checking for updates</source>
         <translation>Ocorreu um problema enquanto verificava por atualizações</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="889"/>
+        <location filename="../dialogs/mainwindow.cpp" line="915"/>
         <source>No updates</source>
         <translation>Sem atualização</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="889"/>
+        <location filename="../dialogs/mainwindow.cpp" line="915"/>
         <source>Your version is up to date
 </source>
         <translation>Sua versão está atualizada
 </translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="1008"/>
+        <location filename="../dialogs/mainwindow.cpp" line="1034"/>
         <source>Donate</source>
         <translation>Donativo</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="1009"/>
+        <location filename="../dialogs/mainwindow.cpp" line="1035"/>
         <source>It seems that you are using QtADB for a while now. Maybe consider a donation to a project...</source>
         <translation>Parece que você está usando QtADB já faz um tempo. Considere talvez fazer uma doação para o projeto...</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="1010"/>
+        <location filename="../dialogs/mainwindow.cpp" line="1036"/>
         <source>Yes, I want to donate</source>
         <translation>Sim, eu quero doar</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="1011"/>
+        <location filename="../dialogs/mainwindow.cpp" line="1037"/>
         <source>Remaind me later</source>
         <translation>Lembre-me depois</translation>
     </message>
     <message>
-        <location filename="../dialogs/mainwindow.cpp" line="1012"/>
+        <location filename="../dialogs/mainwindow.cpp" line="1038"/>
         <source>Do not bother me again</source>
         <translation>Não me amole mais</translation>
     </message>
@@ -1262,6 +1280,14 @@ Latest version: </source>
         <source>refresh list</source>
         <extracomment>refresh messages button</extracomment>
         <translation>Atualizar lista</translation>
+    </message>
+</context>
+<context>
+    <name>NewMessage</name>
+    <message>
+        <location filename="../qml/messages/NewMessage.qml" line="152"/>
+        <source>&lt;B&gt;Send message&lt;/B&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1336,39 +1362,52 @@ Latest version: </source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="139"/>
-        <location filename="../main.cpp" line="172"/>
-        <location filename="../main.cpp" line="186"/>
+        <location filename="../main.cpp" line="192"/>
+        <location filename="../main.cpp" line="224"/>
+        <location filename="../main.cpp" line="246"/>
+        <location filename="../widgets/settingswidget.cpp" line="876"/>
         <source>error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="118"/>
+        <location filename="../main.cpp" line="171"/>
+        <location filename="../widgets/settingswidget.cpp" line="854"/>
         <source>Choose path to dir with adb and aapt binaries</source>
         <translation>Escolha o caminho para o diretório com o adb e os binários aapt</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="139"/>
+        <location filename="../main.cpp" line="192"/>
+        <location filename="../widgets/settingswidget.cpp" line="876"/>
         <source>there is no adb binary in here!</source>
         <translation>Aqui não existe um binário adb!</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="140"/>
+        <location filename="../main.cpp" line="193"/>
         <source>Choose path</source>
         <translation>Especifique o caminho</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="141"/>
+        <location filename="../main.cpp" line="194"/>
         <source>Close</source>
         <translation>Fechar</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="172"/>
+        <location filename="../main.cpp" line="224"/>
         <source>It seems that adb is not working properly</source>
         <translation>Parece que o adb não está funcionando corretamente</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="187"/>
+        <location filename="../main.cpp" line="231"/>
+        <source>choose</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="232"/>
+        <source>Need root?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="247"/>
         <source>adbd cannot run as root in production builds so You can&apos;t do anything with /system partition. Run anyway?
 (press save to run QtADB and disable this message)</source>
         <translation>adbd não pode ser executado como root no modo de produção. Você não pode fazer nada com a partição do sistema.
@@ -1394,7 +1433,7 @@ Executar mesmo assim? (Pressione Salvar para executar QtADB e desativar esta men
     </message>
     <message>
         <location filename="../widgets/recoverywidget.ui" line="84"/>
-        <location filename="../widgets/recoverywidget.cpp" line="517"/>
+        <location filename="../widgets/recoverywidget.cpp" line="539"/>
         <source>Wipe data</source>
         <translation>Apagar dados</translation>
     </message>
@@ -1452,116 +1491,116 @@ Executar mesmo assim? (Pressione Salvar para executar QtADB e desativar esta men
         <translation>Escolha uma das opções acima</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="135"/>
+        <location filename="../widgets/recoverywidget.cpp" line="157"/>
         <source>Fix UID finished!</source>
         <translatorcomment>tradução não literal para facilitar entendimento - non-literal translation to facilitate understanding</translatorcomment>
         <translation>UID corrigido!</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="135"/>
+        <location filename="../widgets/recoverywidget.cpp" line="157"/>
         <source>Fixing UID mismatches is finished.</source>
         <translatorcomment>tradução não literal para facilitar entendimento - non-literal translation to facilitate understanding</translatorcomment>
         <translation>Terminada a correção de UID.</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="155"/>
+        <location filename="../widgets/recoverywidget.cpp" line="177"/>
         <source>Flash Zip</source>
         <translatorcomment>não traduzido para que seja entendimento pelo usuário - not to be translated into understanding the user</translatorcomment>
         <translation>Flash Zip</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="155"/>
-        <location filename="../widgets/recoverywidget.cpp" line="517"/>
+        <location filename="../widgets/recoverywidget.cpp" line="177"/>
+        <location filename="../widgets/recoverywidget.cpp" line="539"/>
         <source>Are you sure??</source>
         <translation>Tem certeza??</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="157"/>
+        <location filename="../widgets/recoverywidget.cpp" line="179"/>
         <source>Open ROM File</source>
         <translation>Abrir arquivo ROM</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="157"/>
+        <location filename="../widgets/recoverywidget.cpp" line="179"/>
         <source>Zip files (*.zip)</source>
         <translation>Arquivos Zip (*.zip)</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="192"/>
-        <location filename="../widgets/recoverywidget.cpp" line="522"/>
+        <location filename="../widgets/recoverywidget.cpp" line="214"/>
+        <location filename="../widgets/recoverywidget.cpp" line="544"/>
         <source>Writing commands....</source>
         <translation>Escrevendo comandos....</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="199"/>
-        <location filename="../widgets/recoverywidget.cpp" line="533"/>
+        <location filename="../widgets/recoverywidget.cpp" line="221"/>
+        <location filename="../widgets/recoverywidget.cpp" line="555"/>
         <source>Rebooting....</source>
         <translation>Reiniciando....</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="217"/>
+        <location filename="../widgets/recoverywidget.cpp" line="239"/>
         <source>USB mounted</source>
         <translation>USB montado</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="217"/>
+        <location filename="../widgets/recoverywidget.cpp" line="239"/>
         <source>SD card is mounted as usb drive</source>
         <translation>Cartão SD card foi montado como drive usb</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="221"/>
+        <location filename="../widgets/recoverywidget.cpp" line="243"/>
         <source>USB unmounted</source>
         <translation>USB desmontado</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="221"/>
+        <location filename="../widgets/recoverywidget.cpp" line="243"/>
         <source>SD card is unmounted</source>
         <translation>Cartão SD card foi desmontado</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="225"/>
+        <location filename="../widgets/recoverywidget.cpp" line="247"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="281"/>
+        <location filename="../widgets/recoverywidget.cpp" line="303"/>
         <source>Backup finished!</source>
         <translation>Arquivamento de segurança completo!</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="281"/>
+        <location filename="../widgets/recoverywidget.cpp" line="303"/>
         <source>Nandroid backup is finished.</source>
         <translation>Arquivamento do Nandroid está completo.</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="437"/>
+        <location filename="../widgets/recoverywidget.cpp" line="459"/>
         <source>Restore finished!</source>
         <translation>Recuperação completa!</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="437"/>
+        <location filename="../widgets/recoverywidget.cpp" line="459"/>
         <source>Nandroid restore is finished.</source>
         <translation>Restauração do Nandroid está completa.</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="469"/>
+        <location filename="../widgets/recoverywidget.cpp" line="491"/>
         <source>Finished</source>
         <translation>Completo</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="472"/>
+        <location filename="../widgets/recoverywidget.cpp" line="494"/>
         <source>Finished
 Choose one backup from combo above to restore it</source>
         <translation>Completo
 Selecione um arquivamento do combo acima para que seja restaurado</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="494"/>
+        <location filename="../widgets/recoverywidget.cpp" line="516"/>
         <source>Looking for backups...</source>
         <translatorcomment>tradução não literal para facilitar entendimento - non-literal translation to facilitate understanding</translatorcomment>
         <translation>Procurando por backups...</translation>
     </message>
     <message>
-        <location filename="../widgets/recoverywidget.cpp" line="512"/>
+        <location filename="../widgets/recoverywidget.cpp" line="534"/>
         <source>Information</source>
         <translation>Informação</translation>
     </message>
@@ -1622,14 +1661,22 @@ Selecione um arquivamento do combo acima para que seja restaurado</translation>
         <translation>Rotacionar para direita</translation>
     </message>
     <message>
-        <location filename="../widgets/screenshotwidget.cpp" line="108"/>
+        <location filename="../widgets/screenshotwidget.cpp" line="131"/>
         <source>Save File...</source>
         <translation>Gravar arquivo...</translation>
     </message>
     <message>
-        <location filename="../widgets/screenshotwidget.cpp" line="108"/>
+        <location filename="../widgets/screenshotwidget.cpp" line="131"/>
         <source>Png file</source>
         <translation>Arquivo Png</translation>
+    </message>
+</context>
+<context>
+    <name>SendMessage</name>
+    <message>
+        <location filename="../qml/messages/delegates/SendMessage.qml" line="93"/>
+        <source>&lt;B&gt;Send message&lt;/B&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1848,176 +1895,191 @@ Selecione um arquivamento do combo acima para que seja restaurado</translation>
         <translation>Mostrar/esconder coluna de arquivos do celular:</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="978"/>
+        <location filename="../widgets/settingswidget.ui" line="951"/>
+        <source>Both</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widgets/settingswidget.ui" line="998"/>
+        <source>show copy confirmation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widgets/settingswidget.ui" line="1071"/>
         <source>Default action on backup:</source>
         <translation>Ação padrão para o arquivo de segurança:</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="989"/>
+        <location filename="../widgets/settingswidget.ui" line="1082"/>
         <source>Backup only apk</source>
         <translation>Arquivar somente o pacote de aplicativo</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="994"/>
+        <location filename="../widgets/settingswidget.ui" line="1087"/>
         <source>Backup only data</source>
         <translation>Arquivar somente os dados</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="999"/>
+        <location filename="../widgets/settingswidget.ui" line="1092"/>
         <source>Backup apk + data</source>
         <translation>Arquivar pacote de aplicativo e dados</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1007"/>
+        <location filename="../widgets/settingswidget.ui" line="1100"/>
         <source>Default action on restore:</source>
         <translation>Ação padrão para restaurar:</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1018"/>
+        <location filename="../widgets/settingswidget.ui" line="1111"/>
         <source>Restore only apk</source>
         <translation>Restaurar somente pacote de aplicativos</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1023"/>
+        <location filename="../widgets/settingswidget.ui" line="1116"/>
         <source>Restore only data</source>
         <translation>Restaurar somente dados</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1028"/>
+        <location filename="../widgets/settingswidget.ui" line="1121"/>
         <source>Restore apk + data</source>
         <translation>Restaurar pacote de aplicativos e dados</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1036"/>
+        <location filename="../widgets/settingswidget.ui" line="1129"/>
         <source>Sort by column:</source>
         <translation>Classificar pela coluna:</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1044"/>
+        <location filename="../widgets/settingswidget.ui" line="1137"/>
         <source>App name</source>
         <translation>Nome do aplicativo</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1049"/>
+        <location filename="../widgets/settingswidget.ui" line="1142"/>
         <source>App version</source>
         <translation>Versão do aplicativo</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1054"/>
+        <location filename="../widgets/settingswidget.ui" line="1147"/>
         <source>App size</source>
         <translation>Tamanho do aplicativo</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1059"/>
+        <location filename="../widgets/settingswidget.ui" line="1152"/>
         <source>App package name</source>
         <translation>Nome do pacote de aplicativo</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1067"/>
+        <location filename="../widgets/settingswidget.ui" line="1160"/>
         <source>Get backups:</source>
         <translation>Obter arquivos armazenados:</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1075"/>
-        <location filename="../widgets/settingswidget.ui" line="1089"/>
-        <location filename="../widgets/settingswidget.ui" line="1181"/>
+        <location filename="../widgets/settingswidget.ui" line="1168"/>
+        <location filename="../widgets/settingswidget.ui" line="1182"/>
+        <location filename="../widgets/settingswidget.ui" line="1274"/>
         <source>only on start</source>
         <translation>Somente ao iniciar</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1080"/>
+        <location filename="../widgets/settingswidget.ui" line="1173"/>
         <source>every time before show</source>
         <translation>Toda vez antes de mostrar</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1094"/>
-        <location filename="../widgets/settingswidget.ui" line="1186"/>
+        <location filename="../widgets/settingswidget.ui" line="1187"/>
+        <location filename="../widgets/settingswidget.ui" line="1279"/>
         <source>every time on show</source>
         <translation>Toda vez que for mostrado</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1166"/>
+        <location filename="../widgets/settingswidget.ui" line="1259"/>
         <source>Get applications:</source>
         <translation>Obter informações do aplicativo:</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1173"/>
+        <location filename="../widgets/settingswidget.ui" line="1266"/>
         <source>Get system applications:</source>
         <translation>Obter aplicativos do sistema:</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1207"/>
+        <location filename="../widgets/settingswidget.ui" line="1300"/>
         <source>Check app version on internet</source>
         <translation>Verificar versão na internet</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1227"/>
+        <location filename="../widgets/settingswidget.ui" line="1320"/>
         <source>Show/hide apps columns:</source>
         <translation>Mostrar/esconder coluna de aplicativos:</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1234"/>
+        <location filename="../widgets/settingswidget.ui" line="1327"/>
         <source>Show/hide backups columns:</source>
         <translation>Mostrar/esconder coluna de arquivamentos:</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1243"/>
+        <location filename="../widgets/settingswidget.ui" line="1336"/>
         <source>sd ext folder</source>
         <translation>Pasta sd ext</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1253"/>
+        <location filename="../widgets/settingswidget.ui" line="1346"/>
         <source>Detect</source>
         <translation>Detectar</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1284"/>
+        <location filename="../widgets/settingswidget.ui" line="1377"/>
         <source>Enable animations</source>
         <translation>Ativar animações</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1294"/>
+        <location filename="../widgets/settingswidget.ui" line="1387"/>
         <source>Duration (in miliseconds)</source>
         <translation>Duração (em milisegundos)</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1485"/>
+        <location filename="../widgets/settingswidget.ui" line="1578"/>
         <source>Change background color</source>
         <translation>Alterar cor de fundo</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1492"/>
+        <location filename="../widgets/settingswidget.ui" line="1585"/>
         <source>Change font color</source>
         <translation>Alterar cor da fonte</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1575"/>
+        <location filename="../widgets/settingswidget.ui" line="1668"/>
         <source>Color files</source>
         <translatorcomment>tradução não literal para facilitar entendimento - non-literal translation to facilitate understanding</translatorcomment>
         <translation>Utilizar cores</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1315"/>
+        <location filename="../widgets/settingswidget.ui" line="1683"/>
+        <source>Change sdk path...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widgets/settingswidget.ui" line="1408"/>
         <source>UpToDown</source>
         <translation>De cima para baixo</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1320"/>
+        <location filename="../widgets/settingswidget.ui" line="1413"/>
         <source>DownToUp</source>
         <translation>De baixo para cima</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1325"/>
+        <location filename="../widgets/settingswidget.ui" line="1418"/>
         <source>LeftToRight</source>
         <translation>Da esquerda para direita</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1330"/>
+        <location filename="../widgets/settingswidget.ui" line="1423"/>
         <source>RightToLeft</source>
         <translation>Da direita para esquerda</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.ui" line="1433"/>
+        <location filename="../widgets/settingswidget.ui" line="1526"/>
         <source>Direction</source>
         <translation>Direção</translation>
     </message>
@@ -2063,56 +2125,56 @@ Selecione um arquivamento do combo acima para que seja restaurado</translation>
         <translation>Associar arquivos apk com o QtADB</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="152"/>
+        <location filename="../widgets/settingswidget.cpp" line="177"/>
         <source>Reset settings??</source>
         <translation>Limpar configurações??</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="152"/>
+        <location filename="../widgets/settingswidget.cpp" line="177"/>
         <source>Are you sure you want restore settings to defaults???</source>
         <translation>Tem certeza de que deseja restaurar as configurações para os padrões???</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="583"/>
+        <location filename="../widgets/settingswidget.cpp" line="611"/>
         <source>Icon</source>
         <comment>icon app column</comment>
         <translation>Ícone</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="602"/>
+        <location filename="../widgets/settingswidget.cpp" line="630"/>
         <source>Icon</source>
         <comment>icon backup column</comment>
         <translation>Ícone</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="620"/>
+        <location filename="../widgets/settingswidget.cpp" line="648"/>
         <source>Icon</source>
         <comment>icon computer column</comment>
         <translation>Ícone</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="637"/>
+        <location filename="../widgets/settingswidget.cpp" line="665"/>
         <source>Icon</source>
         <comment>icon phone column</comment>
         <translation>Ícone</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="732"/>
+        <location filename="../widgets/settingswidget.cpp" line="760"/>
         <source>Associate??</source>
         <translation>Associar??</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="732"/>
+        <location filename="../widgets/settingswidget.cpp" line="760"/>
         <source>Are you sure you want to associate *.apk files with QtADB???</source>
         <translation>Tem certeza de que deseja associar arquivos *.apk com o QtADB???</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="744"/>
+        <location filename="../widgets/settingswidget.cpp" line="772"/>
         <source>Install apk</source>
         <translation>Instalar pacote de aplicativo</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="815"/>
+        <location filename="../widgets/settingswidget.cpp" line="843"/>
         <source>&lt;Not Found&gt;</source>
         <translation>&lt;não encontrado&gt;</translation>
     </message>
@@ -2120,74 +2182,74 @@ Selecione um arquivamento do combo acima para que seja restaurado</translation>
 <context>
     <name>ShellWidget</name>
     <message>
-        <location filename="../widgets/shellwidget.cpp" line="216"/>
+        <location filename="../widgets/shellwidget.cpp" line="241"/>
         <source>
 QtADB shell help
 </source>
         <translation>Ajuda do shell do QtADB</translation>
     </message>
     <message>
-        <location filename="../widgets/shellwidget.cpp" line="217"/>
+        <location filename="../widgets/shellwidget.cpp" line="242"/>
         <source>CTRL+C                - interrupt executing command</source>
         <translation>CTRL+C                - interrompe a execução do comando</translation>
     </message>
     <message>
-        <location filename="../widgets/shellwidget.cpp" line="218"/>
+        <location filename="../widgets/shellwidget.cpp" line="243"/>
         <source>ESC                   - interrupt executing command</source>
         <translation>ESC                   - interrompe a execução do comando</translation>
     </message>
     <message>
-        <location filename="../widgets/shellwidget.cpp" line="219"/>
+        <location filename="../widgets/shellwidget.cpp" line="244"/>
         <source>Shift+CTRL+C          - copy selected text to clipboard</source>
         <translation>Shift+CTRL+C          - copia seleção para área de transferência</translation>
     </message>
     <message>
-        <location filename="../widgets/shellwidget.cpp" line="220"/>
+        <location filename="../widgets/shellwidget.cpp" line="245"/>
         <source>Shift+CTRL+V          - paste text from clipboard</source>
         <translation>Shift+CTRL+V          - cola texto da área de transferência</translation>
     </message>
     <message>
-        <location filename="../widgets/shellwidget.cpp" line="221"/>
+        <location filename="../widgets/shellwidget.cpp" line="246"/>
         <source>Enter/Return          - execute command</source>
         <translation>Enter/Return          - executa comando</translation>
     </message>
     <message>
-        <location filename="../widgets/shellwidget.cpp" line="222"/>
+        <location filename="../widgets/shellwidget.cpp" line="247"/>
         <source>Up (arrow)            - display previous executed command</source>
         <translation>Up (arrow)            - exibe comando executado anteriormente</translation>
     </message>
     <message>
-        <location filename="../widgets/shellwidget.cpp" line="223"/>
+        <location filename="../widgets/shellwidget.cpp" line="248"/>
         <source>Down (arrow)          - display next executed command</source>
         <translation>Down (arrow)          - exibe próximo comando que foi executado</translation>
     </message>
     <message>
-        <location filename="../widgets/shellwidget.cpp" line="224"/>
+        <location filename="../widgets/shellwidget.cpp" line="249"/>
         <source>Left(arrow)           - move cursor to the left</source>
         <translation>Left(arrow)           - move cursor para esquerda</translation>
     </message>
     <message>
-        <location filename="../widgets/shellwidget.cpp" line="225"/>
+        <location filename="../widgets/shellwidget.cpp" line="250"/>
         <source>Right(arrow)          - move cursor to the right</source>
         <translation>Right(arrow)          - move cursor para direita</translation>
     </message>
     <message>
-        <location filename="../widgets/shellwidget.cpp" line="226"/>
+        <location filename="../widgets/shellwidget.cpp" line="251"/>
         <source>CTRL+Left(arrow)      - move cursor to the left skipping over the word</source>
         <translation>CTRL+Left(arrow)      - move cursor para esquerda pulando a palavra</translation>
     </message>
     <message>
-        <location filename="../widgets/shellwidget.cpp" line="227"/>
+        <location filename="../widgets/shellwidget.cpp" line="252"/>
         <source>CTRL+Right(arrow)     - move cursor to the right skipping over the word</source>
         <translation>CTRL+Right(arrow)     - move cursor para direita pulando a palavra</translation>
     </message>
     <message>
-        <location filename="../widgets/shellwidget.cpp" line="228"/>
+        <location filename="../widgets/shellwidget.cpp" line="253"/>
         <source>Delete                - delete next char</source>
         <translation>Delete                - deleta próximo caracter</translation>
     </message>
     <message>
-        <location filename="../widgets/shellwidget.cpp" line="229"/>
+        <location filename="../widgets/shellwidget.cpp" line="254"/>
         <source>Backspace             - delete previous char</source>
         <translation>Backspace             - deleta caracter anterior</translation>
     </message>
@@ -2195,20 +2257,28 @@ QtADB shell help
 <context>
     <name>ThreadBackup</name>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="457"/>
+        <location filename="../dialogs/appdialog.cpp" line="477"/>
         <source>SUCCESS</source>
         <translation>SUCESSO</translation>
     </message>
 </context>
 <context>
+    <name>ThreadContextMenu</name>
+    <message>
+        <location filename="../qml/messages/delegates/ThreadContextMenu.qml" line="57"/>
+        <source>&lt;B&gt;Remove&lt;/B&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ThreadInstall</name>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="586"/>
+        <location filename="../dialogs/appdialog.cpp" line="614"/>
         <source>FAILURE</source>
         <translation>FALHA</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="590"/>
+        <location filename="../dialogs/appdialog.cpp" line="618"/>
         <source>SUCCESS</source>
         <translation>SUCESSO</translation>
     </message>
@@ -2216,16 +2286,16 @@ QtADB shell help
 <context>
     <name>ThreadRestore</name>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="496"/>
-        <location filename="../dialogs/appdialog.cpp" line="526"/>
-        <location filename="../dialogs/appdialog.cpp" line="559"/>
+        <location filename="../dialogs/appdialog.cpp" line="516"/>
+        <location filename="../dialogs/appdialog.cpp" line="550"/>
+        <location filename="../dialogs/appdialog.cpp" line="587"/>
         <source>FAILURE</source>
         <translation>FALHA</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="522"/>
-        <location filename="../dialogs/appdialog.cpp" line="530"/>
-        <location filename="../dialogs/appdialog.cpp" line="555"/>
+        <location filename="../dialogs/appdialog.cpp" line="546"/>
+        <location filename="../dialogs/appdialog.cpp" line="554"/>
+        <location filename="../dialogs/appdialog.cpp" line="583"/>
         <source>SUCCESS</source>
         <translation>SUCESSO</translation>
     </message>
@@ -2233,13 +2303,13 @@ QtADB shell help
 <context>
     <name>ThreadUninstall</name>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="641"/>
+        <location filename="../dialogs/appdialog.cpp" line="669"/>
         <source>FAILURE</source>
         <translation>FALHA</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="645"/>
-        <location filename="../dialogs/appdialog.cpp" line="649"/>
+        <location filename="../dialogs/appdialog.cpp" line="673"/>
+        <location filename="../dialogs/appdialog.cpp" line="677"/>
         <source>SUCCESS</source>
         <translation>SUCESSO</translation>
     </message>
@@ -2257,184 +2327,184 @@ QtADB shell help
         <translation>Condição</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="28"/>
-        <location filename="../dialogs/appdialog.cpp" line="29"/>
+        <location filename="../dialogs/appdialog.cpp" line="48"/>
+        <location filename="../dialogs/appdialog.cpp" line="49"/>
         <source>Install</source>
         <translation>Instalar</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="34"/>
-        <location filename="../dialogs/appdialog.cpp" line="35"/>
+        <location filename="../dialogs/appdialog.cpp" line="54"/>
+        <location filename="../dialogs/appdialog.cpp" line="55"/>
         <source>Uninstall</source>
         <translation>Remover</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="40"/>
-        <location filename="../dialogs/appdialog.cpp" line="41"/>
-        <location filename="../dialogs/appdialog.cpp" line="122"/>
-        <location filename="../dialogs/appdialog.cpp" line="123"/>
+        <location filename="../dialogs/appdialog.cpp" line="60"/>
+        <location filename="../dialogs/appdialog.cpp" line="61"/>
+        <location filename="../dialogs/appdialog.cpp" line="142"/>
+        <location filename="../dialogs/appdialog.cpp" line="143"/>
         <source>Reinstall</source>
         <translation>Reinstalar</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="48"/>
-        <location filename="../dialogs/appdialog.cpp" line="49"/>
+        <location filename="../dialogs/appdialog.cpp" line="68"/>
+        <location filename="../dialogs/appdialog.cpp" line="69"/>
         <source>Backup apps</source>
         <translation>Arquivar aplicativos</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="53"/>
-        <location filename="../dialogs/appdialog.cpp" line="54"/>
+        <location filename="../dialogs/appdialog.cpp" line="73"/>
+        <location filename="../dialogs/appdialog.cpp" line="74"/>
         <source>Backup data</source>
         <translation>Arquivar dados</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="58"/>
-        <location filename="../dialogs/appdialog.cpp" line="59"/>
+        <location filename="../dialogs/appdialog.cpp" line="78"/>
+        <location filename="../dialogs/appdialog.cpp" line="79"/>
         <source>Backup apps and data</source>
         <translation>Arquivar aplicativos e dados</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="67"/>
-        <location filename="../dialogs/appdialog.cpp" line="68"/>
+        <location filename="../dialogs/appdialog.cpp" line="87"/>
+        <location filename="../dialogs/appdialog.cpp" line="88"/>
         <source>Restore apps</source>
         <translation>Restaurar aplicativos</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="72"/>
-        <location filename="../dialogs/appdialog.cpp" line="73"/>
+        <location filename="../dialogs/appdialog.cpp" line="92"/>
+        <location filename="../dialogs/appdialog.cpp" line="93"/>
         <source>Restore data</source>
         <translation>Restaurar dados</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="77"/>
-        <location filename="../dialogs/appdialog.cpp" line="78"/>
-        <location filename="../dialogs/appdialog.cpp" line="159"/>
+        <location filename="../dialogs/appdialog.cpp" line="97"/>
+        <location filename="../dialogs/appdialog.cpp" line="98"/>
+        <location filename="../dialogs/appdialog.cpp" line="179"/>
         <source>Restore apps and data</source>
         <translation>Restaurar aplicativos e dados</translation>
-    </message>
-    <message>
-        <location filename="../dialogs/appdialog.cpp" line="110"/>
-        <source>Install</source>
-        <comment>apd dialog title</comment>
-        <translation>Instalar</translation>
-    </message>
-    <message>
-        <location filename="../dialogs/appdialog.cpp" line="111"/>
-        <source>Install</source>
-        <comment>label text</comment>
-        <translation>Instalar</translation>
-    </message>
-    <message>
-        <location filename="../dialogs/appdialog.cpp" line="116"/>
-        <source>Uninstall</source>
-        <comment>apd dialog title</comment>
-        <translation>Remover</translation>
-    </message>
-    <message>
-        <location filename="../dialogs/appdialog.cpp" line="117"/>
-        <source>Uninstall</source>
-        <comment>label text</comment>
-        <translation>Remover</translation>
     </message>
     <message>
         <location filename="../dialogs/appdialog.cpp" line="130"/>
-        <source>Backup apps</source>
+        <source>Install</source>
         <comment>apd dialog title</comment>
-        <translation>Arquivar aplicativos</translation>
+        <translation>Instalar</translation>
     </message>
     <message>
         <location filename="../dialogs/appdialog.cpp" line="131"/>
+        <source>Install</source>
+        <comment>label text</comment>
+        <translation>Instalar</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/appdialog.cpp" line="136"/>
+        <source>Uninstall</source>
+        <comment>apd dialog title</comment>
+        <translation>Remover</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/appdialog.cpp" line="137"/>
+        <source>Uninstall</source>
+        <comment>label text</comment>
+        <translation>Remover</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/appdialog.cpp" line="150"/>
+        <source>Backup apps</source>
+        <comment>apd dialog title</comment>
+        <translation>Arquivar aplicativos</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/appdialog.cpp" line="151"/>
         <source>Backup apps</source>
         <comment>label text</comment>
         <translation>Arquivar aplicativos</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="135"/>
-        <source>Backup data</source>
-        <comment>apd dialog title</comment>
-        <translation>Arquivar dados</translation>
-    </message>
-    <message>
-        <location filename="../dialogs/appdialog.cpp" line="136"/>
-        <source>Backup data</source>
-        <comment>label text</comment>
-        <translation>Arquivar dados</translation>
-    </message>
-    <message>
-        <location filename="../dialogs/appdialog.cpp" line="140"/>
-        <source>Backup apps and data</source>
-        <comment>apd dialog title</comment>
-        <translation>Arquivar aplicativos e dados</translation>
-    </message>
-    <message>
-        <location filename="../dialogs/appdialog.cpp" line="141"/>
-        <source>Backup apps and data</source>
-        <comment>label text</comment>
-        <translation>Arquivar aplicativos e dados</translation>
-    </message>
-    <message>
-        <location filename="../dialogs/appdialog.cpp" line="149"/>
-        <source>Restore apps</source>
-        <comment>apd dialog title</comment>
-        <translation>Restaurar aplicativos</translation>
-    </message>
-    <message>
-        <location filename="../dialogs/appdialog.cpp" line="150"/>
-        <source>Restore apps</source>
-        <comment>label text</comment>
-        <translation>Restaurar aplicativos</translation>
-    </message>
-    <message>
-        <location filename="../dialogs/appdialog.cpp" line="154"/>
-        <source>Restore data</source>
-        <comment>apd dialog title</comment>
-        <translation>Restaurar dados</translation>
-    </message>
-    <message>
         <location filename="../dialogs/appdialog.cpp" line="155"/>
-        <source>Restore data</source>
+        <source>Backup data</source>
+        <comment>apd dialog title</comment>
+        <translation>Arquivar dados</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/appdialog.cpp" line="156"/>
+        <source>Backup data</source>
         <comment>label text</comment>
-        <translation>Restaurar dados</translation>
+        <translation>Arquivar dados</translation>
     </message>
     <message>
         <location filename="../dialogs/appdialog.cpp" line="160"/>
+        <source>Backup apps and data</source>
+        <comment>apd dialog title</comment>
+        <translation>Arquivar aplicativos e dados</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/appdialog.cpp" line="161"/>
+        <source>Backup apps and data</source>
+        <comment>label text</comment>
+        <translation>Arquivar aplicativos e dados</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/appdialog.cpp" line="169"/>
+        <source>Restore apps</source>
+        <comment>apd dialog title</comment>
+        <translation>Restaurar aplicativos</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/appdialog.cpp" line="170"/>
+        <source>Restore apps</source>
+        <comment>label text</comment>
+        <translation>Restaurar aplicativos</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/appdialog.cpp" line="174"/>
+        <source>Restore data</source>
+        <comment>apd dialog title</comment>
+        <translation>Restaurar dados</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/appdialog.cpp" line="175"/>
+        <source>Restore data</source>
+        <comment>label text</comment>
+        <translation>Restaurar dados</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/appdialog.cpp" line="180"/>
         <source>Restore apps and data</source>
         <comment>label text</comment>
         <translation>Restaurar aplicativos e dados</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="224"/>
+        <location filename="../dialogs/appdialog.cpp" line="244"/>
         <source>Cancel operation??</source>
         <translation>Cancelar operação??</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="224"/>
+        <location filename="../dialogs/appdialog.cpp" line="244"/>
         <source>Are you sure You want to cancel operation??</source>
         <translation>Você realmente quer cancelar esta operação??</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="340"/>
+        <location filename="../dialogs/appdialog.cpp" line="360"/>
         <source>Install finished</source>
         <translation>Instalação completa</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="344"/>
+        <location filename="../dialogs/appdialog.cpp" line="364"/>
         <source>Uninstall finished</source>
         <translation>Remoção completa</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="348"/>
+        <location filename="../dialogs/appdialog.cpp" line="368"/>
         <source>Reinstall finished</source>
         <translation>Reinstalação completa</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="352"/>
+        <location filename="../dialogs/appdialog.cpp" line="372"/>
         <source>Backup finished</source>
         <translation>Arquivamento completo</translation>
     </message>
     <message>
-        <location filename="../dialogs/appdialog.cpp" line="356"/>
+        <location filename="../dialogs/appdialog.cpp" line="376"/>
         <source>Restore finished</source>
         <translation>Restauração completa</translation>
     </message>
@@ -2488,23 +2558,23 @@ QtADB shell help
         <translation>Instalar</translation>
     </message>
     <message>
-        <location filename="../dialogs/appinfo.cpp" line="38"/>
-        <location filename="../dialogs/appinfo.cpp" line="83"/>
+        <location filename="../dialogs/appinfo.cpp" line="58"/>
+        <location filename="../dialogs/appinfo.cpp" line="103"/>
         <source>Reinstall</source>
         <translation>Reinstalar</translation>
     </message>
     <message>
-        <location filename="../dialogs/appinfo.cpp" line="111"/>
+        <location filename="../dialogs/appinfo.cpp" line="131"/>
         <source>install</source>
         <translation>Instalar</translation>
     </message>
     <message>
-        <location filename="../dialogs/appinfo.cpp" line="111"/>
+        <location filename="../dialogs/appinfo.cpp" line="131"/>
         <source>are you sure???</source>
         <translation>Tem certeza???</translation>
     </message>
     <message>
-        <location filename="../dialogs/appinfo.cpp" line="111"/>
+        <location filename="../dialogs/appinfo.cpp" line="131"/>
         <source>reinstall</source>
         <translation>reinstalar</translation>
     </message>
@@ -2558,14 +2628,27 @@ QtADB shell help
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../dialogs/dialogkopiuj.cpp" line="109"/>
+        <location filename="../dialogs/dialogkopiuj.cpp" line="129"/>
         <source>Close??</source>
         <translation>Cancelar operação??</translation>
     </message>
     <message>
-        <location filename="../dialogs/dialogkopiuj.cpp" line="109"/>
+        <location filename="../dialogs/dialogkopiuj.cpp" line="129"/>
         <source>Are you sure??</source>
         <translation>Tem certesa??</translation>
+    </message>
+</context>
+<context>
+    <name>messageView</name>
+    <message>
+        <location filename="../qml/messageView.qml" line="85"/>
+        <source>&lt;B&gt;New message&lt;/B&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/messageView.qml" line="151"/>
+        <source>reading messages</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

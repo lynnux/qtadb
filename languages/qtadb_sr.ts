@@ -1,8 +1,11 @@
-<!DOCTYPE TS><TS>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1">
 <context>
     <name>AboutDialog</name>
     <message>
         <source>QtADB - Your android manager</source>
+        <extracomment>About dialog title</extracomment>
         <translation>QtADB - Ваш Андроид Управљач</translation>
     </message>
     <message>
@@ -36,6 +39,22 @@
     <message>
         <source>Ok</source>
         <translation>Ок</translation>
+    </message>
+    <message>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;QtADB was created with&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://qt.nokia.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -91,50 +110,62 @@
     </message>
     <message>
         <source>App name</source>
+        <extracomment>app name label</extracomment>
         <translation>Име програма</translation>
     </message>
     <message>
         <source>App version</source>
+        <extracomment>version label</extracomment>
         <translation>Верзија програма</translation>
     </message>
     <message>
         <source>File name</source>
+        <extracomment>file name label</extracomment>
         <translation>Име документа</translation>
     </message>
     <message>
         <source>File Size</source>
+        <extracomment>size label</extracomment>
         <translation>Величина документа</translation>
     </message>
     <message>
         <source>Package name</source>
+        <extracomment>package label</extracomment>
         <translation>Име пакета</translation>
     </message>
     <message>
         <source>Location</source>
+        <extracomment>location label</extracomment>
         <translation>Локација</translation>
     </message>
     <message>
         <source>Latest version</source>
+        <extracomment>latest version label</extracomment>
         <translation>Последња верзија</translation>
     </message>
     <message>
         <source>uninstall</source>
+        <extracomment>uninstall apps</extracomment>
         <translation>деисталирај</translation>
     </message>
     <message>
         <source>backup</source>
+        <extracomment>backup apps</extracomment>
         <translation>резервна копија</translation>
     </message>
     <message>
         <source>restore</source>
+        <extracomment>restore backup</extracomment>
         <translation>врати</translation>
     </message>
     <message>
         <source>remove</source>
+        <extracomment>remove backup</extracomment>
         <translation>уклони</translation>
     </message>
     <message>
         <source>Refresh</source>
+        <extracomment>refresh apps/backups</extracomment>
         <translation>Освежи</translation>
     </message>
     <message>
@@ -329,6 +360,7 @@ After You place it in correct directory click Refresh button</source>
     <name>ConnectWifi</name>
     <message>
         <source>Connect</source>
+        <extracomment>Connect wifi dialog title</extracomment>
         <translation>Повежи</translation>
     </message>
     <message>
@@ -417,6 +449,7 @@ After You place it in correct directory click Refresh button</source>
     <name>FileWidget</name>
     <message>
         <source>computer</source>
+        <extracomment>table title</extracomment>
         <translation>рачунар</translation>
     </message>
     <message>
@@ -425,38 +458,47 @@ After You place it in correct directory click Refresh button</source>
     </message>
     <message>
         <source>phone</source>
+        <extracomment>table title</extracomment>
         <translation>телефон</translation>
     </message>
     <message>
         <source>F2 rename</source>
+        <extracomment>rename button</extracomment>
         <translation>Ф2 преименуј</translation>
     </message>
     <message>
         <source>F3 select all/none</source>
+        <extracomment>select button</extracomment>
         <translation>Ф3 селектуј све/ништа</translation>
     </message>
     <message>
         <source>F4 install</source>
+        <extracomment>install button</extracomment>
         <translation>Ф4 инсталација</translation>
     </message>
     <message>
         <source>F5 copy</source>
+        <extracomment>copy button</extracomment>
         <translation>Ф5 копирај</translation>
     </message>
     <message>
         <source>F6 new dir</source>
+        <extracomment>new dir button</extracomment>
         <translation>Ф6 нови директоријум</translation>
     </message>
     <message>
         <source>F7 refresh</source>
+        <extracomment>refresh files button</extracomment>
         <translation>Ф7 освежи</translation>
     </message>
     <message>
         <source>F8 delete</source>
+        <extracomment>delete button</extracomment>
         <translation>Ф8 обриши</translation>
     </message>
     <message>
         <source>F9 hidden files</source>
+        <extracomment>hidden button</extracomment>
         <translation>Ф9 скривена документа</translation>
     </message>
     <message>
@@ -723,6 +765,7 @@ Make sure that you are allowed to do this</source>
     <name>MainWindow</name>
     <message>
         <source>Refresh</source>
+        <extracomment>refresh state when disconnected</extracomment>
         <translation>Освежи</translation>
     </message>
     <message>
@@ -735,6 +778,7 @@ Make sure that you are allowed to do this</source>
     </message>
     <message>
         <source>QtADB - Your android manager</source>
+        <extracomment>Main window title</extracomment>
         <translation>QtADB - Ваш Андроид Управљач</translation>
     </message>
     <message>
@@ -942,7 +986,15 @@ Latest version: </source>
     <name>MessageWidget</name>
     <message>
         <source>refresh list</source>
+        <extracomment>refresh messages button</extracomment>
         <translation>Освежи листу</translation>
+    </message>
+</context>
+<context>
+    <name>NewMessage</name>
+    <message>
+        <source>&lt;B&gt;Send message&lt;/B&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1023,6 +1075,14 @@ Latest version: </source>
 (press save to run QtADB and disable this message)</source>
         <translation>адбд не може бити покренута као рут у продукцији тако да не можете учинити ништа са /system партицијом. Свеједно покренути?
 (притисните Сачувај да покренете QyADB и искључите ову поруку)</translation>
+    </message>
+    <message>
+        <source>choose</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Need root?</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1197,18 +1257,22 @@ Choose one backup from combo above to restore it</source>
     <name>ScreenshotWidget</name>
     <message>
         <source>Refresh</source>
+        <extracomment>refresh screenshot button</extracomment>
         <translation>Освежи</translation>
     </message>
     <message>
         <source>Save</source>
+        <extracomment>save screenshot button</extracomment>
         <translation>Сачувај</translation>
     </message>
     <message>
         <source>Rotate left</source>
+        <extracomment>rotate screenshot</extracomment>
         <translation>Ротирај лево</translation>
     </message>
     <message>
         <source>Rotate right</source>
+        <extracomment>rotate screenshot</extracomment>
         <translation>Ротирај десно</translation>
     </message>
     <message>
@@ -1218,6 +1282,13 @@ Choose one backup from combo above to restore it</source>
     <message>
         <source>Png file</source>
         <translation>Пнг слика</translation>
+    </message>
+</context>
+<context>
+    <name>SendMessage</name>
+    <message>
+        <source>&lt;B&gt;Send message&lt;/B&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1596,6 +1667,18 @@ Choose one backup from combo above to restore it</source>
         <source>&lt;Not Found&gt;</source>
         <translation>&lt;Није пронађено&gt;</translation>
     </message>
+    <message>
+        <source>Both</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>show copy confirmation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Change sdk path...</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShellWidget</name>
@@ -1664,6 +1747,13 @@ QtADB shell help
     <message>
         <source>SUCCESS</source>
         <translation>УСПЕШНО</translation>
+    </message>
+</context>
+<context>
+    <name>ThreadContextMenu</name>
+    <message>
+        <source>&lt;B&gt;Remove&lt;/B&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1853,6 +1943,7 @@ QtADB shell help
     <name>appInfo</name>
     <message>
         <source>App info</source>
+        <extracomment>app info dialog title</extracomment>
         <translation>Информације о програму</translation>
     </message>
     <message>
@@ -1908,6 +1999,7 @@ QtADB shell help
     <name>dialogKopiuj</name>
     <message>
         <source>Copying</source>
+        <extracomment>Copy dialog title</extracomment>
         <translation>Копирање</translation>
     </message>
     <message>
@@ -1949,6 +2041,17 @@ QtADB shell help
     <message>
         <source>Are you sure??</source>
         <translation>Јесте ли сигурни??</translation>
+    </message>
+</context>
+<context>
+    <name>messageView</name>
+    <message>
+        <source>&lt;B&gt;New message&lt;/B&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>reading messages</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
