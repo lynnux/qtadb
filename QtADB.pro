@@ -129,5 +129,7 @@ LIBS += libole32
 }
 win32-msvc* {
 LIBS += ole32.lib
+DEFINES += _USING_V110_SDK71_ # http://stackoverflow.com/questions/20266367/using-visual-studio-2012s-compiler-to-make-qt-applications-for-windows-xp
+QMAKE_LFLAGS_WINDOWS = /SUBSYSTEM:WINDOWS,5.01 # http://www.tripleboot.org/?p=423
 }
 #tutaj i w ecwin7.h
